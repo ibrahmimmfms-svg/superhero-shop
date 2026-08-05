@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and buy your favorite superhero merchandise, special weapons, and clothing at the Superhero Shop.">
+    <meta name="keywords" content="superhero, weapons, suits, thor, iron man, spider-man">
+    <link rel="icon" href="images/favicon.png">
+    <title>Superhero Shop</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <input type="search" placeholder="Search for weapons, suits...">
+            <button type="button">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Weapons">Weapons</a></li>
+                <li><a href="#Clothes">Clothes</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#Shopping-Cart">Shopping-Cart</a></li>
+            </ul>
+        </nav>
+        <h1>Superhero Shop</h1>
+        <h3>Welcome to the Superhero Shop!</h3>
+        <p>Find your favorite superhero merchandise here.</p>
+    </header>
+
+    <main>
+        <section id="Home">
+            <h2>Home</h2>
+            <p>Discover a wide range of superhero products, from action figures to clothing and accessories.</p>
+        </section>
+
+        <!-- ===== WEAPONS SECTION WITH ITEM COUNT ===== -->
+        <section id="Weapons">
+            <h2>Special Weapons <span>(8 Items)</span></h2>
+            
+            <article>
+                <img src="images/thor-hammer.png" width="30%" height="30%" alt="Thor's Hammer">
+                <h3>Thor's Hammer</h3>
+                <p>Thor’s hammer, known as Mjölnir in Norse mythology, is the signature weapon of the thunder god, Thor. Forged by dwarves, it is a divine instrument that always hits its mark, returns to Thor's hand when thrown, and possesses the power to level mountains, summon lightning, and hallow or bless the dead.
+                    <br>
+                    <span>Price: $299.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Uru metal, enchanted by Odin</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>400kg</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Control over lightning, flight, and energy projection</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="thor-hammer">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article> 
+                <img src="images/stormbreaker.png" width="30%" height="30%" alt="Stormbreaker">
+                <h3>Stormbreaker</h3>
+                <p>Stormbreaker is an enchanted, nigh-indestructible axe used primarily by Thor. Forged from Uru metal in the heart of a dying star at Nidavellir, it functions as a king's weapon capable of channeling immense lightning, summoning the Bifrost for cosmic travel, and cutting through virtually any defense.
+                    <br>
+                    <span>Price: $349.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Forged from Uru metal in the heart of a dying star at Nidavellir</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Varies depending on the wielder's control</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Channeling immense lightning, summoning the Bifrost, and cutting through virtually any defense</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="stormbreaker">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/captain-america-shield.png" width="30%" height="30%" alt="Captain America's Shield">
+                <h3>Captain America's Shield</h3>
+                <p>Captain America's iconic shield is a concave, disc-shaped weapon. It measures 2.5 feet in diameter and weighs 12 pounds. The shield features a highly recognizable, vibrant design consisting of a white five-pointed star centered in a blue circle, which is surrounded by three concentric rings of red, white, and red.
+                    <br>
+                    <span>Price: $149.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Vibranium alloy, virtually indestructible</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>12 pounds</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Absorbs vibrations, can be thrown and ricocheted with precision</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="captain-america-shield">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/infinity-gauntlet.png" width="30%" height="30%" alt="Infinity Gauntlet">
+                <h3>Infinity Gauntlet</h3>
+                <p>The most powerful weapon in the universe is the Infinity Gauntlet, which grants its owner absolute control over reality, time, space, power, mind, and soul.
+                    <br>
+                    <span>Price: $499.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Uru metal, embedded with six Infinity Stones</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Varies depending on the stones used</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Control over time, space, reality, power, mind, and soul</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="infinity-gauntlet">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/cosmic-cube.png" width="30%" height="30%" alt="Cosmic Cube">
+                <h3>Cosmic Cube</h3>
+                <p>The Cosmic Cube is an immensely powerful artifact in the Marvel Universe that allows its wielder to alter and reshape reality at will. Created by channeling extra-dimensional energy from the realm of the Beyonders into a containment matrix, the cube grants near-limitless power, including matter/energy manipulation and time alteration.
+                    <br>
+                    <span>Price: $399.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Extra-dimensional energy contained in a cube-shaped matrix</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Varies depending on the wielder's control</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Reality manipulation, matter/energy control, and time alteration</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="cosmic-cube">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/all-black-the-necrosword.png" width="30%" height="30%" alt="All-Black the Necrosword">
+                <h3>All-Black the Necrosword</h3>
+                <p>All-Black the Necrosword is a legendary, sentient weapon in Marvel Comics created by Knull, the primordial God of Darkness. Forged from Knull's shadow and the power of a slain Celestial, it is the universe's first symbiote. The blade grants its wielder god-like strength, the ability to regenerate, and the power to slay virtually any immortal being.
+                    <br>
+                    <span>Price: $299.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Forged from Knull's shadow and the essence of a slain Celestial</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Varies depending on the wielder's control</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>God-like strength, regeneration, and the power to slay immortals</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="all-black-the-necrosword">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/eye-of-agamotto.png" width="30%" height="30%" alt="Eye of Agamotto">
+                <h3>Eye of Agamotto</h3>
+                <p>The Eye of Agamotto is a legendary mystical amulet created by Agamotto, the first Sorcerer Supreme. Designed to contain the Time Stone, it primarily projects an all-revealing light of pure magic that melts away illusions and allows the user to see the truth, manipulate time, and peer into souls.
+                    <br>
+                    <span>Price: $249.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Enchanted metal and mystical energy, containing the Time Stone</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Lightweight and easy to wear around the neck</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Time manipulation, truth revelation, and soul perception</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="eye-of-agamotto">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/wolverine-claws.png" width="30%" height="30%" alt="Wolverine's Claws">
+                <h3>Wolverine's Claws</h3>
+                <p>Wolverine's iconic claws are a set of six razor-sharp, foot-long blades—three in each hand—that house naturally inside his forearms and protrude through the skin between his knuckles. Originally, they were lethal, natural bone, but they are now fused with Adamantium, an incredibly rare and indestructible metal alloy.
+                    <br>
+                    <span>Price: $179.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Adamantium alloy, fused with natural bone</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Lightweight and retractable for ease of use</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Superhuman cutting ability, retractable, and virtually indestructible</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="wolverine-claws">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <!-- ===== CLOTHES SECTION WITH ITEM COUNT ===== -->
+        <section id="Clothes">
+            <h2>Superhero Clothing <span>(3 Items)</span></h2>
+            
+            <article>
+                <img src="images/spider-man-suit.png" width="30%" height="30%" alt="Spider-man Suit">
+                <h3>Spider-man Suit</h3>
+                <p>The Spider-Man suit has evolved from Peter Parker's makeshift wrestling outfit to multifunctional armor. While its most iconic design remains the classic red and blue spandex suit with a spiderweb and spider on the chest, Parker has adapted his wardrobe over the decades to include a symbiotic alien suit and Iron Man-inspired suits.
+                    <br>
+                    <span>Price: $199.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Advanced synthetic fabric with web-shooting capabilities</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Lightweight and flexible for agility</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Enhanced durability, web-slinging, and stealth features</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="spider-man-suit">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/iron-man-suit.png" width="30%" height="30%" alt="Iron Man Suit">
+                <h3>Iron Man Suit</h3>
+                <p>Tony Stark's Iron Man suit is an advanced, powered battle armor designed for flight, combat, and environmental protection. Powered by a miniaturized Arc Reactor, it features a gold-titanium or nanotech shell, repulsor weapon systems, an onboard AI interface, and enhanced biomechanical strength.
+                    <br>
+                    <span>Price: $999.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Gold-titanium alloy or nanotech composite</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Varies depending on the model and configuration</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>Flight, repulsor weaponry, AI interface, and enhanced strength</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="iron-man-suit">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+
+            <article>
+                <img src="images/captain-america-suit.png" width="30%" height="30%" alt="Captain America Suit">
+                <h3>Captain America Suit</h3>
+                <p>Captain America's suit is a patriotic, tactical uniform primarily colored red, white, and blue. Constructed from advanced, fire-resistant carbon polymer materials like Kevlar and Nomex, it features a prominent white star on the chest, a utility belt, a winged or helmet-like cowl, and is paired with his signature vibranium shield.
+                    <br>
+                    <span>Price: $500.99</span>
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Material</td>
+                            <td>Kevlar and Nomex carbon polymer</td>    
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>2kg</td>
+                        </tr>
+                        <tr>
+                            <td>Abilities</td>
+                            <td>High-tech, blast-resistant body armor</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                    <input type="hidden" name="product_name" value="captain-america-suit">
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <button type="submit">Add to Cart</button>
+                    <div>
+                        <label>Choose your size:</label>
+                        <select name="size">
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <section id="Reviews">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"I bought Thor's Hammer for my collection, and it's absolutely stunning! The craftsmanship is top-notch, and it feels like holding a piece of mythology in my hands."</p>
+                <footer>- John D.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The Spider-Man suit is incredible! It's so comfortable and looks amazing. I feel like a real superhero when I wear it!"</p>
+                <footer>- Sarah K.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"The Spider-Man suit fits perfectly and the web-shooters are incredible!"</p>
+                <footer>- Peter Parker</footer>
+            </blockquote>
+        </section>
+
+        <section id="Shopping-Cart">
+            <h2>Order Your Superhero Gear</h2>
+            <form>
+                <div>
+                    <label>Full Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label>Preferred Delivery Date:</label>
+                    <input type="date" name="date">
+                </div>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    
+    <section>
+        <h2>Join the Superhero League</h2>
+        <p>Subscribe to get updates on new weapon drops and exclusive suit discounts!</p>
+        <form>
+            <label>Email Address:</label>
+            <input type="email" name="email" placeholder="hero@avengers.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div>
+            <a href="#">Justice Net</a> | 
+            <a href="#">Avengers HQ</a> | 
+            <a href="#">Stark Industries</a>
+        </div>
+        <p>
+            <a href="tel:+201123977068">تواصل معنا 📞</a>
+        </p>
+
+        <!-- ===== BACK TO TOP LINK ===== -->
+        <p><a href="#top">⬆ Back to Top</a></p>
+
+        <p>&copy; 2026 Superhero Shop. All rights reserved.</p>
+
+        <!-- ===== LAST UPDATED ===== -->
+        <p>Last updated: <time datetime="2026-08-05">August 5, 2026</time></p>
+    </footer>
+
+</body>
+</html>
