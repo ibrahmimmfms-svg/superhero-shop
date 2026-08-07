@@ -1,272 +1,455 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    <!--  === HTML DOCUMENT HEAD ===  -->
 <head>
-    <meta charset="UTF-8">
+    <!-- === META TAGS === -->
+
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8"> 
+    <!-- Compatibility for Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description for the page -->
     <meta name="description" content="Discover and buy your favorite superhero merchandise, special weapons, and clothing at the Superhero Shop.">
+    <!-- Keywords for the page -->
     <meta name="keywords" content="superhero, weapons, suits, thor, iron man, spider-man">
+    <!-- Website Favicon (Icon shown in browser tab) -->
     <link rel="icon" href="images/favicon.png">
+    <!-- Page title -->
     <title>Superhero Shop</title>
 </head>
+<!--  === HTML DOCUMENT BODY ===  -->
 <body>
-
+    <!--  === HEADER ===  -->
     <header>
+        <!-- Search bar -->
         <div>
+            <!-- Search input field -->
             <input type="search" placeholder="Search for weapons, suits...">
+            <!-- Search button -->
             <button type="button">Search</button>
         </div>
+        <!-- Main navigation bar -->
         <nav>
+            <!-- List of links -->
             <ul>
+                <!-- Homepage section link -->
                 <li><a href="#Home">Home</a></li>
+                <!-- Weapons section link -->
                 <li><a href="#Weapons">Weapons</a></li>
+                <!-- Clothes section link -->
                 <li><a href="#Clothes">Clothes</a></li>
+                <!-- Reviews section link -->
                 <li><a href="#Reviews">Reviews</a></li>
+                <!-- Shopping Cart section link -->
                 <li><a href="#Shopping-Cart">Shopping-Cart</a></li>
             </ul>
         </nav>
+        <!-- Main site title -->
         <h1>Superhero Shop</h1>
+        <!-- Welcome message -->
         <h3>Welcome to the Superhero Shop!</h3>
+        <!-- Website tagline / introductory text -->
         <p>Find your favorite superhero merchandise here.</p>
     </header>
 
+    <!-- Main page content (Excluding header & footer) -->
     <main>
+        <!-- ===== HOME SECTION ===== -->
         <section id="Home">
+            <!-- Home section content -->
             <h2>Home</h2>
             <p>Discover a wide range of superhero products, from action figures to clothing and accessories.</p>
         </section>
 
         <!-- ===== WEAPONS SECTION WITH ITEM COUNT ===== -->
         <section id="Weapons">
+            <!-- Section title with item counter -->
             <h2>Special Weapons <span>(8 Items)</span></h2>
-            
+            <!-- === Single product card (thor-hammer) === -->
             <article>
+                <!-- image of thor hammer -->
                 <img src="images/thor-hammer.png" width="30%" height="30%" alt="Thor's Hammer">
+                <!-- Product title -->
                 <h3>Thor's Hammer</h3>
+                <!-- Product description -->
                 <p>Thor’s hammer, known as Mjölnir in Norse mythology, is the signature weapon of the thunder god, Thor. Forged by dwarves, it is a divine instrument that always hits its mark, returns to Thor's hand when thrown, and possesses the power to level mountains, summon lightning, and hallow or bless the dead.
                     <br>
+                    <!-- Product price -->
                     <span>Price: $299.99</span>
                 </p>
+                <!-- Product specifications table -->
                 <table>
+                    <!-- Table header (Column titles) -->
                     <thead>
+                        <!-- Table row for column titles -->
                         <tr>
+                            <!-- Table column titles -->
                             <th>Feature</th>
                             <th>Description</th>
                         </tr>
                     </thead>
+                    <!-- Table body (Data rows) -->
                     <tbody>
+                        <!-- === Table data cells === -->
+                        <!-- table material row -->
                         <tr>
+                            <!-- Feature title (Material) -->
                             <td>Material</td>
+                            <!-- Description of the material -->
                             <td>Uru metal, enchanted by Odin</td>
                         </tr>
+                        <!-- table Weight row -->
                         <tr>
+                            <!-- Feature title (Weight) -->
                             <td>Weight</td>
+                            <!-- Description of the weight -->
                             <td>400kg</td>
                         </tr>
+                        <!-- table Abilities row -->
                         <tr>
+                            <!-- Feature title (Abilities) -->
                             <td>Abilities</td>
+                            <!-- Description of the abilities -->
                             <td>Control over lightning, flight, and energy projection</td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Customer order form -->
                 <form>
+                    <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="thor-hammer">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <button type="submit">Add to Cart</button>
+                    <!-- Size selection dropdown menu -->
                     <div>
+                        <!-- Label for the size selection -->
                         <label>Choose your size:</label>
+                        <!-- Size options -->
                         <select name="size">
+                            <!-- Default option prompting the user to select a size -->
                             <option value="" disabled selected>Select a size</option>
+                            <!-- Size options (small)-->
                             <option value="small">Small</option>
+                            <!-- Size options (medium)-->
                             <option value="medium">Medium</option>
+                            <!-- Size options (large)-->
                             <option value="large">Large</option>
+                            <!-- Size options (xlarge)-->
                             <option value="xlarge">XLarge</option>
                         </select>
                     </div>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>
                 </form>
             </article>
-
+            <!-- === Single product card (stormbreaker) === -->
             <article> 
+                <!-- image of stormbreaker -->
                 <img src="images/stormbreaker.png" width="30%" height="30%" alt="Stormbreaker">
+                <!-- Product title -->
                 <h3>Stormbreaker</h3>
+                <!-- Product description -->
                 <p>Stormbreaker is an enchanted, nigh-indestructible axe used primarily by Thor. Forged from Uru metal in the heart of a dying star at Nidavellir, it functions as a king's weapon capable of channeling immense lightning, summoning the Bifrost for cosmic travel, and cutting through virtually any defense.
                     <br>
+                    <!-- Product price -->
                     <span>Price: $349.99</span>
                 </p>
+                <!-- Product specifications table -->
                 <table>
+                    <!-- Table header (Column titles) -->
                     <thead>
+                        <!-- Table row for column titles -->
                         <tr>
+                            <!-- Table column titles -->
                             <th>Feature</th>
                             <th>Description</th>
                         </tr>
                     </thead>
+                    <!-- Table body (Data rows) -->
                     <tbody>
+                        <!-- === Table data cells === -->
+                        <!-- table material row -->    
                         <tr>
+                            <!-- Feature title (Material) -->
                             <td>Material</td>
+                            <!-- Description of the material -->
                             <td>Forged from Uru metal in the heart of a dying star at Nidavellir</td>
                         </tr>
+                        <!-- table Weight row -->
                         <tr>
+                            <!-- Feature title (Weight) -->
                             <td>Weight</td>
+                            <!-- Description of the weight -->
                             <td>Varies depending on the wielder's control</td>
                         </tr>
+                        <!-- table Abilities row -->
                         <tr>
+                            <!-- Feature title (Abilities) -->
                             <td>Abilities</td>
+                            <!-- Description of the abilities -->
                             <td>Channeling immense lightning, summoning the Bifrost, and cutting through virtually any defense</td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Customer order form -->
                 <form>
+                    <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="stormbreaker">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <button type="submit">Add to Cart</button>
+                    <!-- Size selection dropdown menu -->
                     <div>
+                        <!-- Label for the size selection -->
                         <label>Choose your size:</label>
+                        <!-- Size options -->
                         <select name="size">
+                            <!-- Default option prompting the user to select a size -->
                             <option value="" disabled selected>Select a size</option>
+                            <!-- Size options (small)-->
                             <option value="small">Small</option>
+                            <!-- Size options (medium)-->
                             <option value="medium">Medium</option>
+                            <!-- Size options (large)-->
                             <option value="large">Large</option>
+                            <!-- Size options (xlarge)-->
                             <option value="xlarge">XLarge</option>
                         </select>
                     </div>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>
                 </form>
             </article>
-
+            <!-- === Single product card (captain-america-shield) === -->
             <article>
+                <!-- image of captain-america-shield -->
                 <img src="images/captain-america-shield.png" width="30%" height="30%" alt="Captain America's Shield">
+                <!-- Product title -->
                 <h3>Captain America's Shield</h3>
+                <!-- Product description -->
                 <p>Captain America's iconic shield is a concave, disc-shaped weapon. It measures 2.5 feet in diameter and weighs 12 pounds. The shield features a highly recognizable, vibrant design consisting of a white five-pointed star centered in a blue circle, which is surrounded by three concentric rings of red, white, and red.
                     <br>
+                    <!-- Product price -->
                     <span>Price: $149.99</span>
                 </p>
+                <!-- Product specifications table -->
                 <table>
+                    <!-- Table header (Column titles) -->
                     <thead>
+                        <!-- Table row for column titles -->
                         <tr>
+                            <!-- Table column titles -->
                             <th>Feature</th>
                             <th>Description</th>
                         </tr>
                     </thead>
+                    <!-- Table body (Data rows) -->
                     <tbody>
+                        <!-- === Table data cells === -->
+                        <!-- table material row -->    
                         <tr>
+                            <!-- Feature title (Material) -->
                             <td>Material</td>
+                            <!-- Description of the material -->
                             <td>Vibranium alloy, virtually indestructible</td>
                         </tr>
+                        <!-- table Weight row -->
                         <tr>
+                            <!-- Feature title (Weight) -->
                             <td>Weight</td>
+                            <!-- Description of the weight -->
                             <td>12 pounds</td>
                         </tr>
+                        <!-- table Abilities row -->
                         <tr>
+                            <!-- Feature title (Abilities) -->
                             <td>Abilities</td>
+                            <!-- Description of the abilities -->
                             <td>Absorbs vibrations, can be thrown and ricocheted with precision</td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Customer order form -->
                 <form>
+                    <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="captain-america-shield">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <button type="submit">Add to Cart</button>
+                    <!-- Size selection dropdown menu -->
                     <div>
+                        <!-- Label for the size selection -->
                         <label>Choose your size:</label>
+                        <!-- Size options -->
                         <select name="size">
+                            <!-- Default option prompting the user to select a size -->
                             <option value="" disabled selected>Select a size</option>
+                            <!-- Size options (small)-->
                             <option value="small">Small</option>
+                            <!-- Size options (medium)-->
                             <option value="medium">Medium</option>
+                            <!-- Size options (large)-->
                             <option value="large">Large</option>
+                            <!-- Size options (xlarge)-->
                             <option value="xlarge">XLarge</option>
                         </select>
                     </div>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>    
                 </form>
             </article>
-
+            <!-- === Single product card (infinity-gauntlet) === -->
             <article>
+                <!-- image of infinity-gauntlet -->
                 <img src="images/infinity-gauntlet.png" width="30%" height="30%" alt="Infinity Gauntlet">
+                <!-- Product title -->
                 <h3>Infinity Gauntlet</h3>
+                <!-- Product description -->
                 <p>The most powerful weapon in the universe is the Infinity Gauntlet, which grants its owner absolute control over reality, time, space, power, mind, and soul.
                     <br>
+                    <!-- Product price -->
                     <span>Price: $499.99</span>
                 </p>
+                <!-- Product specifications table -->
                 <table>
+                    <!-- Table header (Column titles) -->
                     <thead>
+                        <!-- Table row for column titles -->
                         <tr>
+                            <!-- Feature column title -->
                             <th>Feature</th>
                             <th>Description</th>
                         </tr>
                     </thead>
+                    <!-- Table body (Data rows) -->
                     <tbody>
+                        <!-- === Table data cells === -->
+                        <!-- table material row -->  
                         <tr>
+                            <!-- Feature title (Material) -->
                             <td>Material</td>
+                            <!-- Description of the material -->
                             <td>Uru metal, embedded with six Infinity Stones</td>
                         </tr>
+                        <!-- table Weight row -->
                         <tr>
+                            <!-- Feature title (Weight) -->
                             <td>Weight</td>
+                            <!-- Description of the weight -->
                             <td>Varies depending on the stones used</td>
                         </tr>
+                        <!-- table Abilities row -->
                         <tr>
+                            <!-- Feature title (Abilities) -->
                             <td>Abilities</td>
+                            <!-- Description of the abilities -->
                             <td>Control over time, space, reality, power, mind, and soul</td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Customer order form -->
                 <form>
+                    <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="infinity-gauntlet">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <button type="submit">Add to Cart</button>
+                    <!-- Size selection dropdown menu -->
                     <div>
+                        <!-- Label for the size selection -->
                         <label>Choose your size:</label>
+                        <!-- Size options -->
                         <select name="size">
+                            <!-- Default option prompting the user to select a size -->
                             <option value="" disabled selected>Select a size</option>
+                            <!-- Size options (small)-->
                             <option value="small">Small</option>
+                            <!-- Size options (medium)-->
                             <option value="medium">Medium</option>
+                            <!-- Size options (large)-->
                             <option value="large">Large</option>
+                            <!-- Size options (xlarge)-->
                             <option value="xlarge">XLarge</option>
                         </select>
                     </div>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>
                 </form>
             </article>
-
+            <!-- === Single product card (captain-america-shield) === -->
             <article>
+                <!-- image of cosmic-cube -->
                 <img src="images/cosmic-cube.png" width="30%" height="30%" alt="Cosmic Cube">
+                <!-- Product title -->
                 <h3>Cosmic Cube</h3>
+                <!-- Product description -->
                 <p>The Cosmic Cube is an immensely powerful artifact in the Marvel Universe that allows its wielder to alter and reshape reality at will. Created by channeling extra-dimensional energy from the realm of the Beyonders into a containment matrix, the cube grants near-limitless power, including matter/energy manipulation and time alteration.
                     <br>
+                    <!-- Product price -->
                     <span>Price: $399.99</span>
                 </p>
+                <!-- Product specifications table -->
                 <table>
+                    <!-- Table header (Column titles) -->
                     <thead>
+                        <!-- Table row for column titles -->
                         <tr>
+                            <!-- Feature column title -->
                             <th>Feature</th>
                             <th>Description</th>
                         </tr>
                     </thead>
+                    <!-- Table body (Data rows) -->
                     <tbody>
+                        <!-- === Table data cells === -->
+                        <!-- table material row -->  
                         <tr>
+                            <!-- Feature title (Material) -->
                             <td>Material</td>
+                            <!-- Description of the material -->
                             <td>Extra-dimensional energy contained in a cube-shaped matrix</td>
                         </tr>
+                        <!-- table Weight row -->
                         <tr>
+                            <!-- Feature title (Weight) -->
                             <td>Weight</td>
+                            <!-- Description of the weight -->
                             <td>Varies depending on the wielder's control</td>
                         </tr>
+                        <!-- table Abilities row -->
                         <tr>
+                            <!-- Feature title (Abilities) -->
                             <td>Abilities</td>
+                            <!-- Description of the abilities -->
                             <td>Reality manipulation, matter/energy control, and time alteration</td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- Customer order form -->
                 <form>
+                    <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="cosmic-cube">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <button type="submit">Add to Cart</button>
+                    <!-- Size selection dropdown menu -->
                     <div>
+                        <!-- Label for the size selection -->
                         <label>Choose your size:</label>
+                        <!-- Size options -->
                         <select name="size">
+                            <!-- Default option prompting the user to select a size -->
                             <option value="" disabled selected>Select a size</option>
+                            <!-- Size options (small)-->
                             <option value="small">Small</option>
+                            <!-- Size options (medium)-->
                             <option value="medium">Medium</option>
+                            <!-- Size options (large)-->
                             <option value="large">Large</option>
+                            <!-- Size options (xlarge)-->
                             <option value="xlarge">XLarge</option>
                         </select>
                     </div>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>
                 </form>
             </article>
 
@@ -582,6 +765,7 @@
                 <button type="submit">Place Order</button>
             </form>
         </section>
+        <!-- Main content goes here -->
     </main>
     
     <section>
