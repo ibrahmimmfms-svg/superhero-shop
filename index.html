@@ -24,7 +24,7 @@
 <!--  === HTML DOCUMENT BODY ===  -->
 <body>
     <!--  === HEADER ===  -->
-    <header>
+    <header id="top">
         <!-- Search bar -->
         <div>
             <!-- Search input field -->
@@ -32,8 +32,6 @@
             <!-- Search button -->
             <button type="button">Search</button>
         </div>
-        <!-- To go to the top of the page -->
-        <p id="top"></p>
         <!-- Main navigation bar -->
         <nav>
             <!-- List of links -->
@@ -83,66 +81,28 @@
                 <!-- Product price -->
                 <span>Price: $299.99</span>
                 <!-- Product specifications table -->
-                <table>
-                    <!-- Table header (Column titles) -->
-                    <thead>
-                        <!-- Table row for column titles -->
-                        <tr>
-                            <!-- Table column titles -->
-                            <th>Feature</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <!-- Table body (Data rows) -->
-                    <tbody>
-                        <!-- === Table data cells === -->
-                        <!-- table material row -->
-                        <tr>
-                            <!-- Feature title (Material) -->
-                            <td>Material</td>
-                            <!-- Description of the material -->
-                            <td>Uru metal, enchanted by Odin</td>
-                        </tr>
-                        <!-- table Weight row -->
-                        <tr>
-                            <!-- Feature title (Weight) -->
-                            <td>Weight</td>
-                            <!-- Description of the weight -->
-                            <td>400kg</td>
-                        </tr>
-                        <!-- table Abilities row -->
-                        <tr>
-                            <!-- Feature title (Abilities) -->
-                            <td>Abilities</td>
-                            <!-- Description of the abilities -->
-                            <td>Control over lightning, flight, and energy projection</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <dl>
+                    <!-- Feature title (Material) -->
+                    <dt>Material</dt>
+                    <!-- Description of the material -->
+                    <dd>Uru metal, enchanted by Odin</dd>
+
+                    <!-- Feature title (Weight) -->
+                    <dt>Weight</dt>
+                    <!-- Description of the weight -->
+                    <dd>400kg</dd>
+
+                    <!-- Feature title (Abilities) -->
+                    <dt>Abilities</dt>
+                    <!-- Description of the abilities -->
+                    <dd>Control over lightning, flight, and energy projection</dd>
+                </dl>
                 <!-- Customer order form -->
                 <form>
                     <!-- Hidden input to send the product name to the server -->
                     <input type="hidden" name="product_name" value="thor-hammer">
                     <!-- Quantity selector with min (1) and max (10) limits -->
                     <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
-                    <!-- Size selection dropdown menu -->
-                    <div>
-                        <!-- Label for the size selection -->
-                        <label>Choose your size:</label>
-                        <!-- Size options -->
-                        <select name="size">
-                            <!-- Default option prompting the user to select a size -->
-                            <option value="" disabled selected>Select a size</option>
-                            <!-- Size options (small)-->
-                            <option value="small">Small</option>
-                            <!-- Size options (medium)-->
-                            <option value="medium">Medium</option>
-                            <!-- Size options (large)-->
-                            <option value="large">Large</option>
-                            <!-- Size options (xlarge)-->
-                            <option value="xlarge">XLarge</option>
-                        </select>
-                    </div>
                     <!-- Submit button to add the selected item to the cart -->
                     <button type="submit">Add to Cart</button>
                 </form>
@@ -159,25 +119,75 @@
                 <!-- Product price -->
                 <span>Price: $349.99</span>
                 <!-- Product specifications table -->
-                <table>
-                    <!-- Table header (Column titles) -->
-                    <thead>
-                        <!-- Table row for column titles -->
-                        <tr>
-                            <!-- Table column titles -->
-                            <th>Feature</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <!-- Table body (Data rows) -->
-                    <tbody>
-                        <!-- === Table data cells === -->
-                        <!-- table material row -->    
-                        <tr>
-                            <!-- Feature title (Material) -->
-                            <td>Material</td>
-                            <!-- Description of the material -->
-                            <td>Forged from Uru metal in the heart of a dying star at Nidavellir</td>
+                <dl>
+                    <!-- Feature title (Material) -->
+                    <dt>Material</dt>
+                    <!-- Description of the material -->
+                    <dd>Forged from Uru metal in the heart of a dying star at Nidavellir</dd>
+
+                    <!-- Feature title (Weight) -->
+                    <dt>Weight</dt>
+                    <!-- Description of the weight -->
+                    <dd>Varies depending on the wielder's control</dd>
+
+                    <!-- Feature title (Abilities) -->
+                    <dt>Abilities</dt>
+                    <!-- Description of the abilities -->
+                    <dd>Channeling immense lightning, summoning the Bifrost, and cutting through virtually any defense</dd>
+                </dl>
+                <!-- Customer order form -->
+                <form>
+                    <!-- Hidden input to send the product name to the server -->
+                    <input type="hidden" name="product_name" value="stormbreaker">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </article>
+            <!-- === Single product card (captain-america-shield) === -->
+            <article>
+                <!-- image of captain-america-shield -->
+                <img src="images/captain-america-shield.png" width="100px" height="100px" alt="Captain America's Shield">
+                <!-- Product title -->
+                <h3>Captain America's Shield</h3>
+                <!-- Product description -->
+                <p>Captain America's iconic shield is a concave, disc-shaped weapon. It measures 2.5 feet in diameter and weighs 12 pounds. The shield features a highly recognizable, vibrant design consisting of a white five-pointed star centered in a blue circle, which is surrounded by three concentric rings of red, white, and red.</p>
+                <br>
+                <!-- Product price -->
+                <span>Price: $149.99</span>
+                <!-- Product specifications table -->
+                <dl>
+                    <!-- Feature title (Material) -->
+                    <dt>Material</dt>
+                    <!-- Description of the material -->
+                    <dd>Vibranium alloy, virtually indestructible</dd>
+
+                    <!-- Feature title (Weight) -->
+                    <dt>Weight</dt>
+                    <!-- Description of the weight -->
+                    <dd>12 pounds</dd>
+
+                    <!-- Feature title (Abilities) -->
+                    <dt>Abilities</dt>
+                    <!-- Description of the abilities -->
+                    <dd>Absorbs vibrations, can be thrown and ricocheted with precision</dd>
+                </dl>
+                <!-- Customer order form -->
+                <form>
+                    <!-- Hidden input to send the product name to the server -->
+                    <input type="hidden" name="product_name" value="captain-america-shield">
+                    <!-- Quantity selector with min (1) and max (10) limits -->
+                    <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+                    <!-- Submit button to add the selected item to the cart -->
+                    <button type="submit">Add to Cart</button>    
+                </form>
+ 
+                    <dl>
+                        <!-- Feature title (Material) -->
+                        <td>Material</td>
+                        <!-- Description of the material -->
+                        <td>Forged from Uru metal in the heart of a dying star at Nidavellir</td>
                         </tr>
                         <!-- table Weight row -->
                         <tr>
