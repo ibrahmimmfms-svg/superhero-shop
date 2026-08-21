@@ -59,28 +59,28 @@
     <!-- Main page content (Excluding header & footer) -->
     <main>
       <!-- ===== HOME SECTION ===== -->
-      <section id="Home">
+      <section id="Home" class="home-section">
         <!-- Home section content -->
-        <h2>Home</h2>
-        <p>
+        <h2 class="section-title">Home</h2>
+        <p class="home-text">
           Discover a wide range of superhero products, from action figures to
           clothing and accessories.
         </p>
       </section>
 
       <!-- ===== WEAPONS SECTION WITH ITEM COUNT ===== -->
-      <section id="Weapons">
+      <section id="Weapons" class="weapons-section">
         <!-- Section title with item counter -->
-        <h2>Special Weapons <span>(8 Items)</span></h2>
+        <h2 class="section-title">Special Weapons <span class="items-count">(8 Items)</span></h2>
 
         <!-- === Single product card (thor-hammer) === -->
-        <article>
+        <article class="product-card">
           <!-- image of thor hammer -->
-          <img src="images/thor-hammer.png" width="100" height="100" alt="Thor's Hammer">
+          <img src="images/thor-hammer.png" alt="Thor's Hammer" class="product-img">
           <!-- Product title -->
-          <h3>Thor's Hammer</h3>
+          <h3 class="product-title">Thor's Hammer</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Thor’s hammer, known as Mjölnir in Norse mythology, is the signature
             weapon of the thunder god, Thor. Forged by dwarves, it is a divine
             instrument that always hits its mark, returns to Thor's hand when
@@ -89,43 +89,43 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $299.99</span>
+          <span class="product-price">Price: $299.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Uru metal, enchanted by Odin</dd>
+            <dd class="spec-value">Uru metal, enchanted by Odin</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>400kg</dd>
+            <dd class="spec-value">400kg</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>Control over lightning, flight, and energy projection</dd>
+            <dd class="spec-value">Control over lightning, flight, and energy projection</dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="thor-hammer">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (stormbreaker) === -->
-        <article>
+        <article class="product-card">
           <!-- image of stormbreaker -->
-          <img src="images/stormbreaker.png" width="100" height="100" alt="Stormbreaker">
+          <img src="images/stormbreaker.png" alt="Stormbreaker" class="product-img">
           <!-- Product title -->
-          <h3>Stormbreaker</h3>
+          <h3 class="product-title">Stormbreaker</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Stormbreaker is an enchanted, nigh-indestructible axe used primarily
             by Thor. Forged from Uru metal in the heart of a dying star at
             Nidavellir, it functions as a king's weapon capable of channeling
@@ -134,48 +134,48 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $349.99</span>
+          <span class="product-price">Price: $349.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>
+            <dd class="spec-value">
               Forged from Uru metal in the heart of a dying star at Nidavellir
             </dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Varies depending on the wielder's control</dd>
+            <dd class="spec-value">Varies depending on the wielder's control</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               Channeling immense lightning, summoning the Bifrost, and cutting
               through virtually any defense
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="stormbreaker">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (captain-america-shield) === -->
-        <article>
+        <article class="product-card">
           <!-- image of captain-america-shield -->
-          <img src="images/captain-america-shield.png" width="100" height="100" alt="Captain America's Shield">
+          <img src="images/captain-america-shield.png" alt="Captain America's Shield" class="product-img">
           <!-- Product title -->
-          <h3>Captain America's Shield</h3>
+          <h3 class="product-title">Captain America's Shield</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Captain America's iconic shield is a concave, disc-shaped weapon. It
             measures 2.5 feet in diameter and weighs 12 pounds. The shield
             features a highly recognizable, vibrant design consisting of a white
@@ -184,88 +184,88 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $149.99</span>
+          <span class="product-price">Price: $149.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Vibranium alloy, virtually indestructible</dd>
+            <dd class="spec-value">Vibranium alloy, virtually indestructible</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>12 pounds</dd>
+            <dd class="spec-value">12 pounds</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               Absorbs vibrations, can be thrown and ricocheted with precision
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="captain-america-shield">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (infinity-gauntlet) === -->
-        <article>
+        <article class="product-card">
           <!-- image of infinity-gauntlet -->
-          <img src="images/infinity-gauntlet.png" width="100" height="100" alt="Infinity Gauntlet">
+          <img src="images/infinity-gauntlet.png" alt="Infinity Gauntlet" class="product-img">
           <!-- Product title -->
-          <h3>Infinity Gauntlet</h3>
+          <h3 class="product-title">Infinity Gauntlet</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             The most powerful weapon in the universe is the Infinity Gauntlet,
             which grants its owner absolute control over reality, time, space,
             power, mind, and soul.
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $499.99</span>
+          <span class="product-price">Price: $499.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Uru metal, embedded with six Infinity Stones</dd>
+            <dd class="spec-value">Uru metal, embedded with six Infinity Stones</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Varies depending on the stones used</dd>
+            <dd class="spec-value">Varies depending on the stones used</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>Control over time, space, reality, power, mind, and soul</dd>
+            <dd class="spec-value">Control over time, space, reality, power, mind, and soul</dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="infinity-gauntlet">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label >Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (cosmic-cube) === -->
-        <article>
+        <article class="product-card">
           <!-- image of cosmic-cube -->
-          <img src="images/cosmic-cube.png" width="100" height="100" alt="Cosmic Cube">
+          <img src="images/cosmic-cube.png" alt="Cosmic Cube" class="product-img">
           <!-- Product title -->
-          <h3>Cosmic Cube</h3>
+          <h3 class="product-title">Cosmic Cube</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             The Cosmic Cube is an immensely powerful artifact in the Marvel
             Universe that allows its wielder to alter and reshape reality at
             will. Created by channeling extra-dimensional energy from the realm
@@ -275,45 +275,45 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $399.99</span>
+          <span class="product-price">Price: $399.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Extra-dimensional energy contained in a cube-shaped matrix</dd>
+            <dd class="spec-value">Extra-dimensional energy contained in a cube-shaped matrix</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Varies depending on the wielder's control</dd>
+            <dd class="spec-value">Varies depending on the wielder's control</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               Reality manipulation, matter/energy control, and time alteration
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="cosmic-cube">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (all-black-the-necrosword) === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the all-black-the-necrosword -->
-          <img src="images/all-black-the-necrosword.png" width="100" height="100" alt="All-Black the Necrosword">
+          <img src="images/all-black-the-necrosword.png" alt="All-Black the Necrosword" class="product-img">
           <!-- Product title -->
-          <h3>All-Black the Necrosword</h3>
+          <h3 class="product-title">All-Black the Necrosword</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             All-Black the Necrosword is a legendary, sentient weapon in Marvel
             Comics created by Knull, the primordial God of Darkness. Forged from
             Knull's shadow and the power of a slain Celestial, it is the
@@ -323,47 +323,47 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $299.99</span>
+          <span class="product-price">Price: $299.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>
+            <dd class="spec-value">
               Forged from Knull's shadow and the essence of a slain Celestial
             </dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Varies depending on the wielder's control</dd>
+            <dd class="spec-value">Varies depending on the wielder's control</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               God-like strength, regeneration, and the power to slay immortals
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="all-black-the-necrosword">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (eye-of-agamotto) === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the eye-of-agamotto -->
-          <img src="images/eye-of-agamotto.png" width="100" height="100" alt="Eye of Agamotto">
+          <img src="images/eye-of-agamotto.png" alt="Eye of Agamotto" class="product-img">
           <!-- Product title -->
-          <h3>Eye of Agamotto</h3>
+          <h3 class="product-title">Eye of Agamotto</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             The Eye of Agamotto is a legendary mystical amulet created by
             Agamotto, the first Sorcerer Supreme. Designed to contain the Time
             Stone, it primarily projects an all-revealing light of pure magic
@@ -372,45 +372,45 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $249.99</span>
+          <span class="product-price">Price: $249.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>
+            <dd class="spec-value">
               Enchanted metal and mystical energy, containing the Time Stone
             </dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Lightweight and easy to wear around the neck</dd>
+            <dd class="spec-value">Lightweight and easy to wear around the neck</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>Time manipulation, truth revelation, and soul perception</dd>
+            <dd class="spec-value">Time manipulation, truth revelation, and soul perception</dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="eye-of-agamotto">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Single product card (wolverine-claws) === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the wolverine-claws -->
-          <img src="images/wolverine-claws.png" width="100" height="100" alt="Wolverine's Claws">
+          <img src="images/wolverine-claws.png" alt="Wolverine's Claws" class="product-img">
           <!-- Product title -->
-          <h3>Wolverine's Claws</h3>
+          <h3 class="product-title">Wolverine's Claws</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Wolverine's iconic claws are a set of six razor-sharp, foot-long
             blades—three in each hand—that house naturally inside his forearms
             and protrude through the skin between his knuckles. Originally, they
@@ -419,35 +419,35 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $179.99</span>
+          <span class="product-price">Price: $179.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Adamantium alloy, fused with natural bone</dd>
+            <dd class="spec-value">Adamantium alloy, fused with natural bone</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Lightweight and retractable for ease of use</dd>
+            <dd class="spec-value">Lightweight and retractable for ease of use</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               Superhuman cutting ability, retractable, and virtually
               indestructible
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="wolverine-claws">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
       </section>
