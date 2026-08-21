@@ -453,18 +453,18 @@
       </section>
 
       <!-- ===== CLOTHES SECTION WITH ITEM COUNT ===== -->
-      <section id="Clothes">
+      <section id="Clothes" class="clothes-section products-section">
         <!-- Section title with item counter -->
-        <h2>Superhero Clothing <span>(3 Items)</span></h2>
+        <h2 class="section-title">Superhero Clothing <span class="items-count">(3 Items)</span></h2>
 
         <!-- === Product Card 1: Spider-man Suit === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the Spider-man Suit -->
-          <img src="images/spider-man-suit.png" width="100" height="100" alt="Spider-man Suit">
+          <img src="images/spider-man-suit.png" alt="Spider-man Suit" class="product-img">
           <!-- Product title -->
-          <h3>Spider-man Suit</h3>
+          <h3 class="product-title">Spider-man Suit</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             The Spider-Man suit has evolved from Peter Parker's makeshift
             wrestling outfit to multifunctional armor. While its most iconic
             design remains the classic red and blue spandex suit with a
@@ -474,36 +474,36 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $199.99</span>
+          <span class="product-price">Price: $199.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Advanced synthetic fabric with web-shooting capabilities</dd>
+            <dd class="spec-value">Advanced synthetic fabric with web-shooting capabilities</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Lightweight and flexible for agility</dd>
+            <dd class="spec-value">Lightweight and flexible for agility</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>Enhanced durability, web-slinging, and stealth features</dd>
+            <dd class="spec-value">Enhanced durability, web-slinging, and stealth features</dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="spider-man-suit">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Size selection dropdown menu -->
-            <div>
+            <div class="size-group">
               <!-- Label for the size selection -->
-              <label>Choose your size:</label>
+              <label class="size-label">Choose your size:</label>
               <!-- Size options -->
-              <select name="size">
+              <select name="size" class="size-select">
                 <!-- Default option prompting the user to select a size -->
                 <option value="" disabled selected>Select a size</option>
                 <!-- Size options (small)-->
@@ -517,18 +517,18 @@
               </select>
             </div>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Product Card 2: Iron Man Suit === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the Iron Man Suit -->
-          <img src="images/iron-man-suit.png" width="100" height="100" alt="Iron Man Suit">
+          <img src="images/iron-man-suit.png" alt="Iron Man Suit" class="product-img">
           <!-- Product title -->
-          <h3>Iron Man Suit</h3>
+          <h3 class="product-title">Iron Man Suit</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Tony Stark's Iron Man suit is an advanced, powered battle armor
             designed for flight, combat, and environmental protection. Powered
             by a miniaturized Arc Reactor, it features a gold-titanium or
@@ -537,38 +537,38 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $999.99</span>
+          <span class="product-price">Price: $999.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Gold-titanium alloy or nanotech composite</dd>
+            <dd class="spec-value">Gold-titanium alloy or nanotech composite</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>Varies depending on the model and configuration</dd>
+            <dd class="spec-value">Varies depending on the model and configuration</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>
+            <dd class="spec-value">
               Flight, repulsor weaponry, AI interface, and enhanced strength
             </dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="iron-man-suit">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Size selection dropdown menu -->
-            <div>
+            <div class="size-group">
               <!-- Label for the size selection -->
-              <label>Choose your size:</label>
+              <label class="size-label">Choose your size:</label>
               <!-- Size options -->
-              <select name="size">
+              <select name="size" class="size-select">
                 <!-- Default option prompting the user to select a size -->
                 <option value="" disabled selected>Select a size</option>
                 <!-- Size options (small)-->
@@ -582,18 +582,18 @@
               </select>
             </div>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
 
         <!-- === Product Card 3: Captain America Suit === -->
-        <article>
+        <article class="product-card">
           <!-- Image of the Captain America Suit -->
-          <img src="images/captain-america-suit.png" width="100" height="100" alt="Captain America Suit">
+          <img src="images/captain-america-suit.png" alt="Captain America Suit" class="product-img">
           <!-- Product title -->
-          <h3>Captain America Suit</h3>
+          <h3 class="product-title">Captain America Suit</h3>
           <!-- Product description -->
-          <p>
+          <p class="product-desc">
             Captain America's suit is a patriotic, tactical uniform primarily
             colored red, white, and blue. Constructed from advanced,
             fire-resistant carbon polymer materials like Kevlar and Nomex, it
@@ -603,36 +603,36 @@
           </p>
           <br>
           <!-- Product price -->
-          <span>Price: $500.99</span>
+          <span class="product-price">Price: $500.99</span>
           <!-- Product specifications table -->
-          <dl>
+          <dl class="product-specs">
             <!-- Feature title (Material) -->
-            <dt>Material</dt>
+            <dt class="spec-title">Material</dt>
             <!-- Description of the material -->
-            <dd>Kevlar and Nomex carbon polymer</dd>
+            <dd class="spec-value">Kevlar and Nomex carbon polymer</dd>
 
             <!-- Feature title (Weight) -->
-            <dt>Weight</dt>
+            <dt class="spec-title">Weight</dt>
             <!-- Description of the weight -->
-            <dd>2kg</dd>
+            <dd class="spec-value">2kg</dd>
 
             <!-- Feature title (Abilities) -->
-            <dt>Abilities</dt>
+            <dt class="spec-title">Abilities</dt>
             <!-- Description of the abilities -->
-            <dd>High-tech, blast-resistant body armor</dd>
+            <dd class="spec-value">High-tech, blast-resistant body armor</dd>
           </dl>
           <!-- Customer order form -->
-          <form>
+          <form class="product-form">
             <!-- Hidden input to send the product name to the server -->
             <input type="hidden" name="product_name" value="captain-america-suit">
             <!-- Quantity selector with min (1) and max (10) limits -->
-            <label>Quantity: <input type="number" name="quantity" min="1" max="10" value="1"></label>
+            <label class="quantity-label">Quantity: <input type="number" name="quantity" min="1" max="10" value="1" class="quantity-input"></label>
             <!-- Size selection dropdown menu -->
-            <div>
+            <div class="size-group">
               <!-- Label for the size selection -->
-              <label>Choose your size:</label>
+              <label class="size-label">Choose your size:</label>
               <!-- Size options -->
-              <select name="size">
+              <select name="size" class="size-select">
                 <!-- Default option prompting the user to select a size -->
                 <option value="" disabled selected>Select a size</option>
                 <!-- Size options (small)-->
@@ -646,74 +646,74 @@
               </select>
             </div>
             <!-- Submit button to add the selected item to the cart -->
-            <button type="submit">Add to Cart</button>
+            <button type="submit" class="btn add-to-cart-btn">Add to Cart</button>
           </form>
         </article>
       </section>
 
       <!-- ===== Reviews Section ===== -->
-      <section id="Reviews">
+      <section id="Reviews" class="reviews-section">
         <!-- Customer reviews -->
-        <h2>What Our Customers Say</h2>
+        <h2 class="section-title">What Our Customers Say</h2>
         <!-- Review 1 -->
-        <blockquote>
+        <blockquote class="review-card">
           <!-- Review content -->
-          <p>
+          <p class="review-text">
             "I bought Thor's Hammer for my collection, and it's absolutely
             stunning! The craftsmanship is top-notch, and it feels like holding
             a piece of mythology in my hands."
           </p>
           <!-- Review author -->
-          <footer>- John D.</footer>
+          <footer class="review-author">- John D.</footer>
         </blockquote>
         <!-- Review 2 -->
-        <blockquote>
+        <blockquote class="review-card">
           <!-- Review content -->
-          <p>
+          <p class="review-text">
             "The Spider-Man suit is incredible! It's so comfortable and looks
             amazing. I feel like a real superhero when I wear it!"
           </p>
           <!-- Review author -->
-          <footer>- Sarah K.</footer>
+          <footer class="review-author">- Sarah K.</footer>
         </blockquote>
         <!-- Review 3 -->
-        <blockquote>
+        <blockquote class="review-card">
           <!-- Review content -->
-          <p>
+          <p class="review-text">
             "The Spider-Man suit fits perfectly and the web-shooters are
             incredible!"
           </p>
           <!-- Review author -->
-          <footer>- Peter Parker</footer>
+          <footer class="review-author">- Peter Parker</footer>
         </blockquote>
       </section>
 
       <!-- ===== Shopping Cart Section ===== -->
-      <section id="Shopping-Cart">
+      <section id="Shopping-Cart" class="cart-section">
         <!-- Shopping cart content -->
-        <h2>Order Your Superhero Gear</h2>
+        <h2 class="section-title">Order Your Superhero Gear</h2>
         <!-- Order form -->
-        <form>
+        <form class="cart-form">
           <!-- Full Name Input Field -->
-          <div>
+          <div class="form-group">
             <!-- Label for the full name input -->
-            <label>Full Name:</label>
+            <label class="form-label">Full Name:</label>
             <!-- Input field for the full name -->
-            <input type="text" name="name" required>
+            <input type="text" name="name" required class="form-input">
             <!-- Hidden input to send the user name to the server -->
-            <input type="hidden" name="user_name" value="superhero-gear">
+            <input type="hidden" name="user_name" value="superhero-gear" class="form-input">
           </div>
           <!-- Delivery Date Field -->
-          <div>
+          <div class="form-group">
             <!--  Label for the preferred delivery date -->
-            <label>Preferred Delivery Date:</label>
+            <label class="form-label">Preferred Delivery Date:</label>
             <!-- Order date selection -->
-            <input type="date" name="date">
+            <input type="date" name="date" required class="form-input">
             <!-- Hidden input to send the delivery date to the server -->
-            <input type="hidden" name="delivery_date" value="superhero-gear">
+            <input type="hidden" name="delivery_date" value="superhero-gear" class="form-input">
           </div>
           <!-- Submit order button -->
-          <button type="submit">Place Order</button>
+          <button type="submit" class="btn checkout-btn">Place Order</button>
         </form>
       </section>
     </main>
