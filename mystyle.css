@@ -29,7 +29,16 @@ body {
     z-index: 1000;
 }
 .site-title{
-    background: linear-gradient(to right , #38bdf8 0%, #818cf8);
+    background: linear-gradient(to right, #38bdf8 0%, #818cf8);
     -webkit-background-clip: text;
     color: transparent;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 7px;
+}
+.nav-link{
+    text-decoration: none;
+    color:aqua;
 }
