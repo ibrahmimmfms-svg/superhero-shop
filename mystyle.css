@@ -29,7 +29,7 @@ body {
     position: sticky;
     top: 0;
     /* Distribute the spaces evenly between the elements */
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* Align the elements vertically in the middle */
     align-items: center;
     /* Header internal spacing (top and bottom 15px, right and left 30px) */
@@ -45,6 +45,11 @@ body {
     -webkit-background-clip: text;
     /* Make the line color transparent to show the gradient underneath. */
     color: transparent;
+}
+.header-subtitle{
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
 }
 .space{
     width: 100%;
