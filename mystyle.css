@@ -1,3 +1,19 @@
-body{
-    background-color: #e51414;
+/* Global Reset & Box Sizing */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Base Body Styles */
+body {
+    /* Setting the site's baseline */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Setting the line height for better readability */
+    line-height: 1.6;
+    /* Luxurious color gradient for the website background */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    /* Set background while browsing */
+    background-attachment: fixed;
+    /* Setting the Main text color */
+    color: #f8fafc;
 }
