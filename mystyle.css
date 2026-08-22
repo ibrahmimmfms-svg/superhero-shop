@@ -30,5 +30,6 @@ body {
 }
 .site-title{
     background: linear-gradient(to right , #38bdf8 0%, #818cf8);
-    color: 
+    -webkit-background-clip: text;
+    color: transparent;
 }
