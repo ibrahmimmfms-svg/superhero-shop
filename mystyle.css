@@ -17,7 +17,7 @@ body {
     /* Setting the Main text color */
     color: #f8fafc;
 }
-/* The section related to formatting and installing the header. */
+/* =====The section related to formatting and installing the header.====== */
 .main-header{
     /* dark header background color */
     background-color: #090d16;
@@ -40,30 +40,73 @@ body {
 /* Logo formatting and color gradient */
 .site-title{
     /* The color gradient between sky blue and purple */
-    background: linear-gradient(to right, #38bdf8 0%, #818cf8 100%);
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #f472b6, #38bdf8);
     /* Crop the gradient background to fit only the letters. */
     -webkit-background-clip: text;
     /* Make the line color transparent to show the gradient underneath. */
     color: transparent;
+    /* Apply infinite smooth shifting animation to the background */
+    animation: shineGradient 4s linear infinite;
 }
+/* Keyframes to create smooth continuous gradient movement */
+@keyframes shineGradient {
+    0% {
+        /* Initial color state */
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        /* Full 360-degree color cycle shift */
+        filter: hue-rotate(360deg);
+    }
+}
+/* Top row container of the header for distributing logo, center welcome section, and right elements */
 .header-top-row{
+    /* I have the container displaying the full screen (100%). */
     width: 100%;
+    /* It activates the Flex system so that it can arrange the internal elements horizontally next to each other. */
     display: flex;
+    /* It distributes the spaces between the elements, pushing the logo to the left and the welcome to the center. */
     justify-content: space-between;
+    /* Align the elements vertically in the text exactly on a single line. */
     align-items: center;
+    /* This makes the container the primary reference (center) for any element inside it to take an absolute position. */
     position: relative;
 }
-.header-subtitle{
+/* Wrapper for centering both the welcome heading and tagline in the exact middle of the header */
+.welcome-container{
+    /* The container is moved outside the normal arrangement of the elements in order to secure its position precisely above the other elements. */
     position: absolute;
+    /* It moves the beginning of the container to the exact middle of the father's width from the north side. */
     left: 50%;
+    /* It moves the container back by half its width, and this is what makes the centering 100% in the middle. */
     transform: translateX(-50%);
+    /* The text (title and description) is centered in the middle of the container itself. */
+    text-align: center;    
 }
+/* Styling and alignment for the secondary header tagline text */
 .header-tagline{
+    /* It keeps the description text centered on the line. */
     text-align: center;
+    /* I have a line of description of the entire display so that it is centered correctly in relation to what is above it. */
     width: 100%;
 }
+/* Full-width spacer to force subsequent layout elements to line-wrap to a new row */
 .space{
+    /* I give the element the full width so that any element after it is pushed down to a new line. */
     width: 100%;
+}
+/* Bottom row container of the header for holding navigation links on the left and the search bar on the right */
+.header-bottom-row{
+    /* Ensures the row spans the full width of the header */    
+    width: 100%;
+    /* Activates Flexbox layout to align links and search bar horizontally */
+    display: flex;
+    /* Pushes navigation links to the left and search container to the right */
+    justify-content: space-between;
+    /* Vertically aligns links and search elements in the middle */
+    align-items: center;
+    /* Adds top spacing between the top header row and this bottom row */
+    margin-top: 15px;
 }
 /* Navigation menu formatting and arrangement */
 .nav-list{
@@ -71,13 +114,73 @@ body {
     display: flex;
     /* Remove the default black dots from the menu */
     list-style-type: none;
-    /* Add a 15 pixel gap between each element. */
-    gap: 15px;
+    /* Add a 25 pixel gap between each element. */
+    gap: 25px;
 }
 /* Link formatting and color */
 .nav-link{
+    /* Set link font size for improved legibility */
+    font-size: 1.05rem;
+    /* Apply semi-bold weight to emphasize link text */
+    font-weight: bold;
     /* Remove the default underline under the link */
     text-decoration: none;
-    /* Set the link color to sky blue */
-    color:aqua;
+    /* Set primary link text color */
+    color: #38bdf8;
+    /* Smooth transition for link color change on hover */
+    transition: color 0.3s ease;
+}
+/* Change link text color on hover */
+.nav-link:hover{
+    color: #818cf8;
+}
+/* Search bar container wrapper */
+.search-container{
+    /* Activating Flexbox to align input field and search button horizontally */
+    display: flex;
+    /* Vertically center align input field and button */
+    align-items: center;
+    /* Add a 8px gap between input field and button */
+    gap: 8px;
+}
+/* style the search input */
+.search-input{
+    /* We change the sharp white background to a dark, calm background. */
+    background-color: #0f172a;
+    /* Set text color to white for clear readability while typing */
+    color: #f8fafc;
+    /* We remove the traditional gray border and apply a soft border in a muted color. */
+    border: 1px solid #334155;
+    /* Give us an internal space (e.g., 8px 12px) so that the text doesn't stick to the edges. */
+    padding: 8px 12px;
+    /* Create smooth, circular edges (for example, 6px or 20px, if you like its shape, then it will be a capsule). */
+    border-radius: 6px;
+    /* Remove default browser blue outline on focus */
+    outline: none;
+}
+/* style the search button */
+.search-btn{
+    /* Match button background with the site primary theme color */
+    background-color: #38bdf8;
+    /* Dark text color for maximum contrast against the light blue button */
+    color: #0f172a;
+    /* Remove default browser button border */
+    border: none;
+    /* Internal spacing for balanced button proportions */
+    padding: 8px 16px;
+    /* Rounded corners matching the search input curvature */
+    border-radius: 6px;
+    /* Change cursor to hand icon on hover to indicate clickability */
+    cursor: pointer;
+    /* Smooth transition for button background and lift effect on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Button hover styles for background color and slight lift effect */
+.search-btn:hover{
+    /* Darker blue background on hover */
+    background-color: #0284c7;
+    /* White text color on hover */
+    color: #ffffff;
+    /* Lift button slightly on hover */
+    transform: translateY(-2px);
 }
