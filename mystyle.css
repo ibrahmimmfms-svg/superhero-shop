@@ -17,3 +17,7 @@ body {
     /* Setting the Main text color */
     color: #f8fafc;
 }
+.main-header{
+    display: flex;
+    position: absolute;
+}
