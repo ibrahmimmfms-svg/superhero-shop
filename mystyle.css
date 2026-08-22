@@ -17,28 +17,51 @@ body {
     /* Setting the Main text color */
     color: #f8fafc;
 }
+/* The section related to formatting and installing the header. */
 .main-header{
+    /* dark header background color */
     background-color: #090d16;
+    /* Activating the Flex system for horizontal element distribution */
     display: flex;
+    /* Allow elements to move to a new line if space is cluttered. */
     flex-wrap: wrap;
+    /* Pin the header to the top of the screen while scrolling */
     position: sticky;
     top: 0;
+    /* Distribute the spaces evenly between the elements */
     justify-content: space-evenly;
+    /* Align the elements vertically in the middle */
     align-items: center;
+    /* Header internal spacing (top and bottom 15px, right and left 30px) */
     padding: 15px 30px;
+    /* Make the header appear above the rest of the page elements. */
     z-index: 1000;
 }
+/* Logo formatting and color gradient */
 .site-title{
-    background: linear-gradient(to right, #38bdf8 0%, #818cf8);
+    /* The color gradient between sky blue and purple */
+    background: linear-gradient(to right, #38bdf8 0%, #818cf8 100%);
+    /* Crop the gradient background to fit only the letters. */
     -webkit-background-clip: text;
+    /* Make the line color transparent to show the gradient underneath. */
     color: transparent;
 }
-.nav-list{
-    display: flex;
-    list-style-type: none;
-    gap: 7px;
+.space{
+    width: 100%;
 }
+/* Navigation menu formatting and arrangement */
+.nav-list{
+    /* Arrange the list items horizontally, side by side. */
+    display: flex;
+    /* Remove the default black dots from the menu */
+    list-style-type: none;
+    /* Add a 15 pixel gap between each element. */
+    gap: 15px;
+}
+/* Link formatting and color */
 .nav-link{
+    /* Remove the default underline under the link */
     text-decoration: none;
+    /* Set the link color to sky blue */
     color:aqua;
 }
