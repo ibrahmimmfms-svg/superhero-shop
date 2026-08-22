@@ -46,10 +46,21 @@ body {
     /* Make the line color transparent to show the gradient underneath. */
     color: transparent;
 }
+.header-top-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 .header-subtitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-tagline{
     text-align: center;
     width: 100%;
-    margin-top: 0;
 }
 .space{
     width: 100%;
