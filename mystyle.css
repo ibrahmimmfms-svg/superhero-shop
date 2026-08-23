@@ -735,3 +735,43 @@ body {
         gap: 20px; /* Adds 20px vertical gap between stacked sections */
     }
 }
+/* ==================== IPAD PORTRAIT RESPONSIVENESS (601px - 992px) ==================== */
+@media (min-width: 601px) and (max-width: 992px) {
+    /* Stack top header elements vertically to prevent logo and welcome text overlap */
+    .header-top-row {
+        /* Change flex direction from horizontal row to vertical column */
+        flex-direction: column;
+        /* Add 10px vertical space between the logo and the welcome message */
+        gap: 10px;
+    }
+
+    /* Reset absolute positioning of the welcome text for iPad portrait orientation */
+    .welcome-container {
+        /* Return container to standard document flow instead of absolute positioning */
+        position: static;
+        /* Remove horizontal translation transform used for centering in wide screens */
+        transform: none;
+    }
+
+    /* Rearrange navigation bar and search bar vertically on iPad portrait view */
+    .header-bottom-row {
+        /* Change layout direction to stack navigation links and search bar */
+        flex-direction: column;
+        /* Add 15px vertical space between the navigation menu and search bar */
+        gap: 15px;
+    }
+
+    /* Adjust navigation link layout and spacing to prevent text wrapping glitches */
+    .nav-list {
+        /* Center align navigation links horizontally */
+        justify-content: center;
+        /* Set 15px vertical gap between wrapped lines and 20px horizontal gap between links */
+        gap: 15px 20px;
+    }
+
+    /* Prevent individual navigation text items from breaking into multiple lines */
+    .nav-item {
+        /* Force link text like 'Shopping-Cart' to stay on a single line */
+        white-space: nowrap;
+    }
+}
