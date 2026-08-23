@@ -110,6 +110,8 @@ body {
 }
 /* Navigation menu formatting and arrangement */
 .nav-list{
+    /* To make links break if width is enough */
+    flex-wrap: wrap;
     /* Arrange the list items horizontally, side by side. */
     display: flex;
     /* Remove the default black dots from the menu */
