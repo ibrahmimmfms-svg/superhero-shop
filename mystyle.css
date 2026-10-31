@@ -26,7 +26,7 @@ body {
     /* Allow elements to move to a new line if space is cluttered. */
     flex-wrap: wrap;
     /* Pin the header to the top of the screen while scrolling */
-    position: sticky;
+    position: fixed;
     top: 0;
     /* Distribute the spaces evenly between the elements */
     justify-content: space-between;
