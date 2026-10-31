@@ -25,6 +25,8 @@ body {
     display: flex;
     /* Allow elements to move to a new line if space is cluttered. */
     flex-wrap: wrap;
+    /* Pin the header to the top of the screen while scrolling */
+    position: sticky;
     top: 0;
     /* Distribute the spaces evenly between the elements */
     justify-content: space-between;
@@ -32,6 +34,8 @@ body {
     align-items: center;
     /* Header internal spacing (top and bottom 15px, right and left 30px) */
     padding: 15px 30px;
+    /* Make the header appear above the rest of the page elements. */
+    z-index: 1000;
 }
 /* Logo formatting and color gradient */
 .site-title{
@@ -700,6 +704,9 @@ body {
 
 /* ==================== MOBILE RESPONSIVENESS (max-width: 600px) ==================== */
 @media (max-width: 600px) {
+    .main-header{
+        position: static;
+    }
     .header-top-row, .header-bottom-row {
         flex-direction: column; /* Changes header layout from horizontal row to vertical column */
         gap: 10px; /* Adds 10px vertical spacing between items */
