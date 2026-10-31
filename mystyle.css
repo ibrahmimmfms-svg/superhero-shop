@@ -1,780 +1,801 @@
 /* Global Reset & Box Sizing */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /* Base Body Styles */
 body {
-    /* Setting the site's baseline */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Setting the line height for better readability */
-    line-height: 1.6;
-    /* Luxurious color gradient for the website background */
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    /* Set background while browsing */
-    background-attachment: fixed;
-    /* Setting the Main text color */
-    color: #f8fafc;
+  /* Setting the site's baseline */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Setting the line height for better readability */
+  line-height: 1.6;
+  /* Luxurious color gradient for the website background */
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  /* Set background while browsing */
+  background-attachment: fixed;
+  /* Setting the Main text color */
+  color: #f8fafc;
 }
 /* =====The section related to formatting and installing the header.====== */
-.main-header{
-    /* dark header background color */
-    background-color: #090d16;
-    /* Activating the Flex system for horizontal element distribution */
-    display: flex;
-    /* Allow elements to move to a new line if space is cluttered. */
-    flex-wrap: wrap;
-    /* Pin the header to the top of the screen while scrolling */
-    position: sticky;
-    top: 0;
-    /* Distribute the spaces evenly between the elements */
-    justify-content: space-between;
-    /* Align the elements vertically in the middle */
-    align-items: center;
-    /* Header internal spacing (top and bottom 15px, right and left 30px) */
-    padding: 15px 30px;
-    /* Make the header appear above the rest of the page elements. */
-    z-index: 1000;
+.main-header {
+  /* dark header background color */
+  background-color: #090d16;
+  /* Activating the Flex system for horizontal element distribution */
+  display: flex;
+  /* Allow elements to move to a new line if space is cluttered. */
+  flex-wrap: wrap;
+  /* Pin the header to the top of the screen while scrolling */
+  position: sticky;
+  top: 0;
+  /* Distribute the spaces evenly between the elements */
+  justify-content: space-between;
+  /* Align the elements vertically in the middle */
+  align-items: center;
+  /* Header internal spacing (top and bottom 15px, right and left 30px) */
+  padding: 15px 30px;
+  /* Make the header appear above the rest of the page elements. */
+  z-index: 1000;
 }
 /* Logo formatting and color gradient */
-.site-title{
-    /* The color gradient between sky blue and purple */
-    background: linear-gradient(90deg, #38bdf8, #818cf8, #f472b6, #38bdf8);
-    /* Crop the gradient background to fit only the letters. */
-    -webkit-background-clip: text;
-    /* Make the line color transparent to show the gradient underneath. */
-    color: transparent;
-    /* Apply infinite smooth shifting animation to the background */
-    animation: shineGradient 4s linear infinite;
+.site-title {
+  /* The color gradient between sky blue and purple */
+  background: linear-gradient(90deg, #38bdf8, #818cf8, #f472b6, #38bdf8);
+  /* Crop the gradient background to fit only the letters. */
+  -webkit-background-clip: text;
+  /* Make the line color transparent to show the gradient underneath. */
+  color: transparent;
+  /* Apply infinite smooth shifting animation to the background */
+  animation: shineGradient 4s linear infinite;
 }
 /* Keyframes to create smooth continuous gradient movement */
 @keyframes shineGradient {
-    0% {
-        /* Initial color state */
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        /* Full 360-degree color cycle shift */
-        filter: hue-rotate(360deg);
-    }
+  0% {
+    /* Initial color state */
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    /* Full 360-degree color cycle shift */
+    filter: hue-rotate(360deg);
+  }
 }
 /* Top row container of the header for distributing logo, center welcome section, and right elements */
-.header-top-row{
-    /* I have the container displaying the full screen (100%). */
-    width: 100%;
-    /* It activates the Flex system so that it can arrange the internal elements horizontally next to each other. */
-    display: flex;
-    /* It distributes the spaces between the elements, pushing the logo to the left and the welcome to the center. */
-    justify-content: space-between;
-    /* Align the elements vertically in the text exactly on a single line. */
-    align-items: center;
-    /* This makes the container the primary reference (center) for any element inside it to take an absolute position. */
-    position: relative;
+.header-top-row {
+  /* I have the container displaying the full screen (100%). */
+  width: 100%;
+  /* It activates the Flex system so that it can arrange the internal elements horizontally next to each other. */
+  display: flex;
+  /* It distributes the spaces between the elements, pushing the logo to the left and the welcome to the center. */
+  justify-content: space-between;
+  /* Align the elements vertically in the text exactly on a single line. */
+  align-items: center;
+  /* This makes the container the primary reference (center) for any element inside it to take an absolute position. */
+  position: relative;
 }
 /* Wrapper for centering both the welcome heading and tagline in the exact middle of the header */
-.welcome-container{
-    /* The container is moved outside the normal arrangement of the elements in order to secure its position precisely above the other elements. */
-    position: absolute;
-    /* It moves the beginning of the container to the exact middle of the father's width from the north side. */
-    left: 50%;
-    /* It moves the container back by half its width, and this is what makes the centering 100% in the middle. */
-    transform: translateX(-50%);
-    /* The text (title and description) is centered in the middle of the container itself. */
-    text-align: center;    
+.welcome-container {
+  /* The container is moved outside the normal arrangement of the elements in order to secure its position precisely above the other elements. */
+  position: absolute;
+  /* It moves the beginning of the container to the exact middle of the father's width from the north side. */
+  left: 50%;
+  /* It moves the container back by half its width, and this is what makes the centering 100% in the middle. */
+  transform: translateX(-50%);
+  /* The text (title and description) is centered in the middle of the container itself. */
+  text-align: center;
 }
 /* Styling and alignment for the secondary header tagline text */
-.header-tagline{
-    /* It keeps the description text centered on the line. */
-    text-align: center;
-    /* I have a line of description of the entire display so that it is centered correctly in relation to what is above it. */
-    width: 100%;
+.header-tagline {
+  /* It keeps the description text centered on the line. */
+  text-align: center;
+  /* I have a line of description of the entire display so that it is centered correctly in relation to what is above it. */
+  width: 100%;
 }
 /* Full-width spacer to force subsequent layout elements to line-wrap to a new row */
-.space{
-    /* I give the element the full width so that any element after it is pushed down to a new line. */
-    width: 100%;
+.space {
+  /* I give the element the full width so that any element after it is pushed down to a new line. */
+  width: 100%;
 }
 /* Bottom row container of the header for holding navigation links on the left and the search bar on the right */
-.header-bottom-row{
-    /* Ensures the row spans the full width of the header */    
-    width: 100%;
-    /* Activates Flexbox layout to align links and search bar horizontally */
-    display: flex;
-    /* Pushes navigation links to the left and search container to the right */
-    justify-content: space-between;
-    /* Vertically aligns links and search elements in the middle */
-    align-items: center;
-    /* Adds top spacing between the top header row and this bottom row */
-    margin-top: 15px;
+.header-bottom-row {
+  /* Ensures the row spans the full width of the header */
+  width: 100%;
+  /* Activates Flexbox layout to align links and search bar horizontally */
+  display: flex;
+  /* Pushes navigation links to the left and search container to the right */
+  justify-content: space-between;
+  /* Vertically aligns links and search elements in the middle */
+  align-items: center;
+  /* Adds top spacing between the top header row and this bottom row */
+  margin-top: 15px;
 }
 /* Navigation menu formatting and arrangement */
-.nav-list{
-    /* To make links break if width is enough */
-    flex-wrap: wrap;
-    /* Arrange the list items horizontally, side by side. */
-    display: flex;
-    /* Remove the default black dots from the menu */
-    list-style-type: none;
-    /* Add a 25 pixel gap between each element. */
-    gap: 25px;
+.nav-list {
+  /* To make links break if width is enough */
+  flex-wrap: wrap;
+  /* Arrange the list items horizontally, side by side. */
+  display: flex;
+  /* Remove the default black dots from the menu */
+  list-style-type: none;
+  /* Add a 25 pixel gap between each element. */
+  gap: 25px;
 }
 /* Link formatting and color */
-.nav-link{
-    /* Set link font size for improved legibility */
-    font-size: 1.05rem;
-    /* Apply semi-bold weight to emphasize link text */
-    font-weight: bold;
-    /* Remove the default underline under the link */
-    text-decoration: none;
-    /* Set primary link text color */
-    color: #38bdf8;
-    /* Smooth transition for link color change on hover */
-    transition: color 0.3s ease;
+.nav-link {
+  /* Set link font size for improved legibility */
+  font-size: 1.05rem;
+  /* Apply semi-bold weight to emphasize link text */
+  font-weight: bold;
+  /* Remove the default underline under the link */
+  text-decoration: none;
+  /* Set primary link text color */
+  color: #38bdf8;
+  /* Smooth transition for link color change on hover */
+  transition: color 0.3s ease;
 }
 /* Change link text color on hover */
-.nav-link:hover{
-    color: #818cf8;
+.nav-link:hover {
+  color: #818cf8;
 }
 /* Search bar container wrapper */
-.search-container{
-    /* Activating Flexbox to align input field and search button horizontally */
-    display: flex;
-    /* Vertically center align input field and button */
-    align-items: center;
-    /* Add a 8px gap between input field and button */
-    gap: 8px;
+.search-container {
+  /* Activating Flexbox to align input field and search button horizontally */
+  display: flex;
+  /* Vertically center align input field and button */
+  align-items: center;
+  /* Add a 8px gap between input field and button */
+  gap: 8px;
 }
 /* style the search input */
-.search-input{
-    /* We change the sharp white background to a dark, calm background. */
-    background-color: #0f172a;
-    /* Set text color to white for clear readability while typing */
-    color: #f8fafc;
-    /* We remove the traditional gray border and apply a soft border in a muted color. */
-    border: 1px solid #334155;
-    /* Give us an internal space (e.g., 8px 12px) so that the text doesn't stick to the edges. */
-    padding: 8px 12px;
-    /* Create smooth, circular edges (for example, 6px or 20px, if you like its shape, then it will be a capsule). */
-    border-radius: 6px;
-    /* Remove default browser blue outline on focus */
-    outline: none;
+.search-input {
+  /* We change the sharp white background to a dark, calm background. */
+  background-color: #0f172a;
+  /* Set text color to white for clear readability while typing */
+  color: #f8fafc;
+  /* We remove the traditional gray border and apply a soft border in a muted color. */
+  border: 1px solid #334155;
+  /* Give us an internal space (e.g., 8px 12px) so that the text doesn't stick to the edges. */
+  padding: 8px 12px;
+  /* Create smooth, circular edges (for example, 6px or 20px, if you like its shape, then it will be a capsule). */
+  border-radius: 6px;
+  /* Remove default browser blue outline on focus */
+  outline: none;
 }
 /* style the search button */
-.search-btn{
-    /* Match button background with the site primary theme color */
-    background-color: #38bdf8;
-    /* Dark text color for maximum contrast against the light blue button */
-    color: #0f172a;
-    /* Remove default browser button border */
-    border: none;
-    /* Internal spacing for balanced button proportions */
-    padding: 8px 16px;
-    /* Rounded corners matching the search input curvature */
-    border-radius: 6px;
-    /* Change cursor to hand icon on hover to indicate clickability */
-    cursor: pointer;
-    /* Smooth transition for button background and lift effect on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.search-btn {
+  /* Match button background with the site primary theme color */
+  background-color: #38bdf8;
+  /* Dark text color for maximum contrast against the light blue button */
+  color: #0f172a;
+  /* Remove default browser button border */
+  border: none;
+  /* Internal spacing for balanced button proportions */
+  padding: 8px 16px;
+  /* Rounded corners matching the search input curvature */
+  border-radius: 6px;
+  /* Change cursor to hand icon on hover to indicate clickability */
+  cursor: pointer;
+  /* Smooth transition for button background and lift effect on hover */
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 /* Button hover styles for background color and slight lift effect */
-.search-btn:hover{
-    /* Darker blue background on hover */
-    background-color: #0284c7;
-    /* White text color on hover */
-    color: #ffffff;
-    /* Lift button slightly on hover */
-    transform: translateY(-2px);
+.search-btn:hover {
+  /* Darker blue background on hover */
+  background-color: #0284c7;
+  /* White text color on hover */
+  color: #ffffff;
+  /* Lift button slightly on hover */
+  transform: translateY(-2px);
 }
 /* style the conteng of the page */
-.main{
-    /* Sets the grid layout for the main container */
-    display: grid;
-    /* Sort by name */
-    grid-template-areas: 
-    'home-section home-section home-section'
-    'weapons-section weapons-section weapons-section'
-    'clothes-section clothes-section clothes-section'
-    'reviews-section reviews-section reviews-section'
-    'cart-section cart-section cart-section'
-    'site-footer site-footer site-footer'
-    ;
+.main {
+  /* Sets the grid layout for the main container */
+  display: grid;
+  /* Sort by name */
+  grid-template-areas:
+    "home-section home-section home-section"
+    "weapons-section weapons-section weapons-section"
+    "clothes-section clothes-section clothes-section"
+    "reviews-section reviews-section reviews-section"
+    "cart-section cart-section cart-section"
+    "site-footer site-footer site-footer";
 }
 /* To give the home section a specific order on the page */
-.home-section{
-    /* Assigns section to the home grid area */
-    grid-area: home-section;
+.home-section {
+  /* Assigns section to the home grid area */
+  grid-area: home-section;
 }
 /* To format the homepage */
-.section-title{
-    /* To make the color purple */
-    color: rgba(99, 9, 209, 0.611);
-    /* To add a shadow for text */
-    text-shadow: 12px 12px 10px  rgb(11, 11, 11);
-    /* To make the text in center of the page */
-    text-align: center;
-    /* To make every letter capital */
-    text-transform: uppercase;
-    /* To make the text bold */
-    font-weight: bold;
-    /* To increase the text size */
-    font-size: 30px;
-    /* To make a bottom margin */
-    margin-bottom: 5px;
-    /* To make a place for homepage in the layout */
-    grid-area: section-title;
+.section-title {
+  /* To make the color purple */
+  color: rgba(99, 9, 209, 0.611);
+  /* To add a shadow for text */
+  text-shadow: 12px 12px 10px rgb(11, 11, 11);
+  /* To make the text in center of the page */
+  text-align: center;
+  /* To make every letter capital */
+  text-transform: uppercase;
+  /* To make the text bold */
+  font-weight: bold;
+  /* To increase the text size */
+  font-size: 30px;
+  /* To make a bottom margin */
+  margin-bottom: 5px;
+  /* To make a place for homepage in the layout */
+  grid-area: section-title;
 }
 /* To make a hover effect */
-.section-title:hover{
-    /* To change the background color */
-    background: linear-gradient(to right, rgba(22, 9, 209, 0.585), rgba(209, 9, 126, 0.585), rgba(255, 4, 46, 0.994));
-    /* To crop the background to fit the text */
-    -webkit-background-clip: text;
-    /* To make the text color transparent so that the background is visible through it */
-    color: transparent;
+.section-title:hover {
+  /* To change the background color */
+  background: linear-gradient(
+    to right,
+    rgba(22, 9, 209, 0.585),
+    rgba(209, 9, 126, 0.585),
+    rgba(255, 4, 46, 0.994)
+  );
+  /* To crop the background to fit the text */
+  -webkit-background-clip: text;
+  /* To make the text color transparent so that the background is visible through it */
+  color: transparent;
 }
 /* To format the page description */
-.home-text{
-    /* To make text in center */
-    text-align: center;
-    /* To make a purple color */
-    color: #6311ef;
-    /* To make a small size for text */
-    font-size: 16px;
-    /* To style the text */
-    font-style: italic;
+.home-text {
+  /* To make text in center */
+  text-align: center;
+  /* To make a purple color */
+  color: #6311ef;
+  /* To make a small size for text */
+  font-size: 16px;
+  /* To style the text */
+  font-style: italic;
 }
 /* To style weapons section */
 .weapons-section {
-    /* To make a place for weapons section in page */
-    grid-area: weapons-section;
-    /* To convert the weapons section into a container and organize it using the grid feature */
-    display: grid;
-    /* Sort by name  */
-    grid-template-areas: 
-    'section-title section-title section-title section-title section-title section-title'
-    'thor-hammer thor-hammer stormbreaker stormbreaker captain-america-shield captain-america-shield'
-    'infinity-gauntlet infinity-gauntlet cosmic-cube cosmic-cube all-black-the-necrosword all-black-the-necrosword'
-    'eye-of-agamotto eye-of-agamotto eye-of-agamotto wolverine-claws wolverine-claws wolverine-claws'
-    ;
-    /* To create a space between each card */
-    gap: 20px;
-    padding: 20px;
+  /* To make a place for weapons section in page */
+  grid-area: weapons-section;
+  /* To convert the weapons section into a container and organize it using the grid feature */
+  display: grid;
+  /* Sort by name  */
+  grid-template-areas:
+    "section-title section-title section-title section-title section-title section-title"
+    "thor-hammer thor-hammer stormbreaker stormbreaker captain-america-shield captain-america-shield"
+    "infinity-gauntlet infinity-gauntlet cosmic-cube cosmic-cube all-black-the-necrosword all-black-the-necrosword"
+    "eye-of-agamotto eye-of-agamotto eye-of-agamotto wolverine-claws wolverine-claws wolverine-claws";
+  /* To create a space between each card */
+  gap: 20px;
+  padding: 20px;
 }
 /* To make a place for card thor hammer */
-.product-card-thor-hammer{
-    grid-area: thor-hammer;
+.product-card-thor-hammer {
+  grid-area: thor-hammer;
 }
 /* To make a place for card stormbreaker */
-.product-card-stormbreaker{
-    grid-area: stormbreaker;
+.product-card-stormbreaker {
+  grid-area: stormbreaker;
 }
 /* To make a place for card captain america shield */
-.product-card-captain-america-shield{
-    grid-area: captain-america-shield;
+.product-card-captain-america-shield {
+  grid-area: captain-america-shield;
 }
 /* To make a place for card infinity gauntlet */
-.product-card-infinity-gauntlet{
-    grid-area: infinity-gauntlet;
+.product-card-infinity-gauntlet {
+  grid-area: infinity-gauntlet;
 }
 /* To make a place for card comsic cube */
-.product-card-cosmic-cube{
-    grid-area: cosmic-cube;
+.product-card-cosmic-cube {
+  grid-area: cosmic-cube;
 }
 /* To make a place for card all black the necrosword */
-.product-card-all-black-the-necrosword{
-    grid-area: all-black-the-necrosword;
+.product-card-all-black-the-necrosword {
+  grid-area: all-black-the-necrosword;
 }
 /* To make a place for card eye of agamotto */
-.product-card-eye-of-agamotto{
-    grid-area: eye-of-agamotto;
+.product-card-eye-of-agamotto {
+  grid-area: eye-of-agamotto;
 }
 /* To make a place for card wolverine claws */
-.product-card-wolverine-claws{
-    grid-area: wolverine-claws;
+.product-card-wolverine-claws {
+  grid-area: wolverine-claws;
 }
 /* To make a style for every card */
 .product-card {
-    /* To make a matte dark blue background */
-    background-color: #1e293b;
-    /* To make a Sky Blue color for text */
-    color: #38bdf8;
-    /* To create a space between content card */
-    padding: 20px;    
-    /* To create curved border */
-    border-radius: 12px;     
-    /* To make a border */
-    border: 1px solid #334155;
-    /* to make a shadow for card */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* To convert every card into a container and organize it using the flex feature */
-    display: flex;
-    /* To determine the direction of the flex */
-    flex-direction: column;
-    /* To make a space between content */
-    justify-content: space-between;
+  /* To make a matte dark blue background */
+  background-color: #1e293b;
+  /* To make a Sky Blue color for text */
+  color: #38bdf8;
+  /* To create a space between content card */
+  padding: 20px;
+  /* To create curved border */
+  border-radius: 12px;
+  /* To make a border */
+  border: 1px solid #334155;
+  /* to make a shadow for card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* To convert every card into a container and organize it using the flex feature */
+  display: flex;
+  /* To determine the direction of the flex */
+  flex-direction: column;
+  /* To make a space between content */
+  justify-content: space-between;
 }
 /* To style the card images */
 .product-img {
-    /* To make the image take up the full width space */
-    width: 100%;
-    /* To make a height for image */
-    height: 260px; 
-    /* To make the image fully displayed */
-    object-fit: contain;
-    /* To make the image to take the full sentence in card */
-    display: block;
-    /* To make a right and left margin */
-    margin: 0 auto 15px auto;
-    /* To make background transparent */
-    background: transparent;
+  /* To make the image take up the full width space */
+  width: 100%;
+  /* To make a height for image */
+  height: 260px;
+  /* To make the image fully displayed */
+  object-fit: contain;
+  /* To make the image to take the full sentence in card */
+  display: block;
+  /* To make a right and left margin */
+  margin: 0 auto 15px auto;
+  /* To make background transparent */
+  background: transparent;
 }
 /* To style the name of the card */
-.product-title{
-    /* To make a matte dark blue background */
-    background: #1e293b;
-    /* To make font bold */
-    font-weight: 900;
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
+.product-title {
+  /* To make a matte dark blue background */
+  background: #1e293b;
+  /* To make font bold */
+  font-weight: 900;
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
 }
 /* To style the description of card */
-.product-desc{
-    /* To make a matte dark blue background */
-    background: #1e293b;
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
+.product-desc {
+  /* To make a matte dark blue background */
+  background: #1e293b;
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
 }
 /* To style the price of card */
-.product-price{
-    /* To make the size of font */
-    font-size: large;
-    /* To make the weight of font */
-    font-weight: bold;
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
-    /* To create no background */
-    background: none;
-    /* To make a top and bottom margin */
-    margin: 10px 0;
+.product-price {
+  /* To make the size of font */
+  font-size: large;
+  /* To make the weight of font */
+  font-weight: bold;
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
+  /* To create no background */
+  background: none;
+  /* To make a top and bottom margin */
+  margin: 10px 0;
 }
 /* To format the properties table */
-.product-specs{
-    /* To make a bottom margin */
-    margin: 0 0 10px;
+.product-specs {
+  /* To make a bottom margin */
+  margin: 0 0 10px;
 }
 /* To format the properties of table */
-.spec-title{
-    /* To make the size of font */
-    font-size: large;
-    /* To make the weight of font */
-    font-weight: bold;
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
-    /* To create no background */
-    background: none;
+.spec-title {
+  /* To make the size of font */
+  font-size: large;
+  /* To make the weight of font */
+  font-weight: bold;
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
+  /* To create no background */
+  background: none;
 }
 /* To format the description of the table's properties */
-.spec-value{
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
-    /* To create no background */
-    background: none;
+.spec-value {
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
+  /* To create no background */
+  background: none;
 }
 /* To format the application form */
-.product-form{
-    /* To make a color for text */
-    color: rgb(254, 252, 252);
-    /* To create no background */
-    background: none;
-    /* To convert every form of card into a container and organize it using the flex feature */
-    display: flex;
-    /* To create a space between content */
-    gap: 12px;
-    /* To break the line if there is not enough space */
-    flex-wrap: wrap;
-
+.product-form {
+  /* To make a color for text */
+  color: rgb(254, 252, 252);
+  /* To create no background */
+  background: none;
+  /* To convert every form of card into a container and organize it using the flex feature */
+  display: flex;
+  /* To create a space between content */
+  gap: 12px;
+  /* To break the line if there is not enough space */
+  flex-wrap: wrap;
 }
 /* To format the size list */
-.size-group{
-    /* To convert every size list of card into a container and organize it using the flex feature  */
-    display: flex;
-    /* To determine the direction of the flex */
-    flex-direction: column;
-    /* To create a space between content */
-    gap: 5px;
-    /* To make a right margin */
-    margin-right: 10px;
+.size-group {
+  /* To convert every size list of card into a container and organize it using the flex feature  */
+  display: flex;
+  /* To determine the direction of the flex */
+  flex-direction: column;
+  /* To create a space between content */
+  gap: 5px;
+  /* To make a right margin */
+  margin-right: 10px;
 }
 /* To format the size list */
-.size-label{
-    font-weight: bold
+.size-label {
+  font-weight: bold;
 }
 /* To format the quantity label */
-.quantity-label{
-    font-size: large;
-    font-weight: 700;
+.quantity-label {
+  font-size: large;
+  font-weight: 700;
 }
 /* To format the quantity input */
-.quantity-input{
-    /* Match button background with the site primary theme color */
-    background-color: #17ae6f;
-    /* Dark text color for maximum contrast against the light blue button */
-    color: #0f172a;
-    /* Remove default browser button border */
-    border: none;
-    /* Internal spacing for balanced button proportions */
-    padding: 8px 16px;
-    /* Rounded corners matching the search input curvature */
-    border-radius: 6px;
-    /* Change cursor to hand icon on hover to indicate clickability */
-    cursor: pointer;
-    /* Smooth transition for button background and lift effect on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.quantity-input {
+  /* Match button background with the site primary theme color */
+  background-color: #17ae6f;
+  /* Dark text color for maximum contrast against the light blue button */
+  color: #0f172a;
+  /* Remove default browser button border */
+  border: none;
+  /* Internal spacing for balanced button proportions */
+  padding: 8px 16px;
+  /* Rounded corners matching the search input curvature */
+  border-radius: 6px;
+  /* Change cursor to hand icon on hover to indicate clickability */
+  cursor: pointer;
+  /* Smooth transition for button background and lift effect on hover */
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
-.add-to-cart-btn{
-    /* Match button background with the site primary theme color */
-    background-color: #38bdf8;
-    /* Dark text color for maximum contrast against the light blue button */
-    color: #0f172a;
-    /* Remove default browser button border */
-    border: none;
-    /* Internal spacing for balanced button proportions */
-    padding: 8px 16px;
-    /* Rounded corners matching the search input curvature */
-    border-radius: 6px;
-    /* Change cursor to hand icon on hover to indicate clickability */
-    cursor: pointer;
-    /* Smooth transition for button background and lift effect on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.add-to-cart-btn {
+  /* Match button background with the site primary theme color */
+  background-color: #38bdf8;
+  /* Dark text color for maximum contrast against the light blue button */
+  color: #0f172a;
+  /* Remove default browser button border */
+  border: none;
+  /* Internal spacing for balanced button proportions */
+  padding: 8px 16px;
+  /* Rounded corners matching the search input curvature */
+  border-radius: 6px;
+  /* Change cursor to hand icon on hover to indicate clickability */
+  cursor: pointer;
+  /* Smooth transition for button background and lift effect on hover */
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
-.add-to-cart-btn:hover{
-    /* Darker blue background on hover */
-    background-color: #0284c7;
-    /* White text color on hover */
-    color: #ffffff;
-    /* Lift button slightly on hover */
-    transform: translateY(-2px);
+.add-to-cart-btn:hover {
+  /* Darker blue background on hover */
+  background-color: #0284c7;
+  /* White text color on hover */
+  color: #ffffff;
+  /* Lift button slightly on hover */
+  transform: translateY(-2px);
 }
 /* ==================== PRODUCTS SECTION ==================== */
-.products-section{
-    grid-area: clothes-section; /* Assigns the grid area name for the overall section */
-    display: grid; /* Enables CSS Grid layout for internal items */
-    grid-template-areas: 
-    'clothes clothes clothes' /* Row 1: Section title spans across 3 columns */
-    'spider-man-suit iron-man-suit captain-america-suit' /* Row 2: Displays 3 product cards side by side */
-    ;
-    gap: 20px; /* Sets a 20px gap between grid items */
-    padding: 20px; /* Adds 20px space inside the container borders */
+.products-section {
+  grid-area: clothes-section; /* Assigns the grid area name for the overall section */
+  display: grid; /* Enables CSS Grid layout for internal items */
+  grid-template-areas:
+    "clothes clothes clothes" /* Row 1: Section title spans across 3 columns */
+    "spider-man-suit iron-man-suit captain-america-suit" /* Row 2: Displays 3 product cards side by side */;
+  gap: 20px; /* Sets a 20px gap between grid items */
+  padding: 20px; /* Adds 20px space inside the container borders */
 }
 
 /* Clothes Section Title */
-.section-title-clothes{
-    color: rgba(99, 9, 209, 0.611); /* Sets a semi-transparent purple text color */
-    text-shadow: 12px 12px 10px rgb(11, 11, 11); /* Adds a black drop-shadow behind the text */
-    text-align: center; /* Centers the title text horizontally */
-    text-transform: uppercase; /* Converts all text letters to uppercase */
-    font-weight: bold; /* Makes the font weight bold */
-    font-size: 30px; /* Sets font size to 30 pixels */
-    margin-bottom: 5px; /* Adds 5px space below the title */
-    grid-area: clothes; /* Links this element to the 'clothes' grid area */
+.section-title-clothes {
+  color: rgba(
+    99,
+    9,
+    209,
+    0.611
+  ); /* Sets a semi-transparent purple text color */
+  text-shadow: 12px 12px 10px rgb(11, 11, 11); /* Adds a black drop-shadow behind the text */
+  text-align: center; /* Centers the title text horizontally */
+  text-transform: uppercase; /* Converts all text letters to uppercase */
+  font-weight: bold; /* Makes the font weight bold */
+  font-size: 30px; /* Sets font size to 30 pixels */
+  margin-bottom: 5px; /* Adds 5px space below the title */
+  grid-area: clothes; /* Links this element to the 'clothes' grid area */
 }
 
 /* Hover effect on Clothes Title */
-.section-title-clothes:hover{
-    background: linear-gradient(to right, rgba(22, 9, 209, 0.585), rgba(209, 9, 126, 0.585), rgba(255, 4, 46, 0.994)); /* Creates a horizontal multi-color gradient background */
-    -webkit-background-clip: text; /* Clips the gradient background to fit the shape of the text */
-    color: transparent; /* Makes text fill transparent so the background gradient shows through */
+.section-title-clothes:hover {
+  background: linear-gradient(
+    to right,
+    rgba(22, 9, 209, 0.585),
+    rgba(209, 9, 126, 0.585),
+    rgba(255, 4, 46, 0.994)
+  ); /* Creates a horizontal multi-color gradient background */
+  -webkit-background-clip: text; /* Clips the gradient background to fit the shape of the text */
+  color: transparent; /* Makes text fill transparent so the background gradient shows through */
 }
 
 /* Assign Spider-Man card to its grid area */
-.product-card-spider-man-suit{
-    grid-area: spider-man-suit;
+.product-card-spider-man-suit {
+  grid-area: spider-man-suit;
 }
 
 /* Assign Iron Man card to its grid area */
-.product-card-iron-man-suit{
-    grid-area: iron-man-suit;
+.product-card-iron-man-suit {
+  grid-area: iron-man-suit;
 }
 
 /* Assign Captain America card to its grid area */
-.product-card-captain-america-suit{
-    grid-area: captain-america-suit;
+.product-card-captain-america-suit {
+  grid-area: captain-america-suit;
 }
 
 /* Size selection dropdown */
-.size-select{
-    background-color: #0f172a; /* Sets background color to dark navy */
-    color: white; /* Sets text color to white */
-    border: none; /* Removes the default outline border */
-    border-radius: 6px; /* Rounds the corners by 6 pixels */
-    padding: 10px; /* Adds 10px padding inside the dropdown */
-    cursor: pointer; /* Changes the mouse pointer to a hand icon on hover */
+.size-select {
+  background-color: #0f172a; /* Sets background color to dark navy */
+  color: white; /* Sets text color to white */
+  border: none; /* Removes the default outline border */
+  border-radius: 6px; /* Rounds the corners by 6 pixels */
+  padding: 10px; /* Adds 10px padding inside the dropdown */
+  cursor: pointer; /* Changes the mouse pointer to a hand icon on hover */
 }
 
 /* ==================== REVIEWS SECTION ==================== */
 .reviews-section {
-    grid-area: reviews-section; /* Assigns the grid area name */
-    display: flex; /* Enables Flexbox layout */
-    flex-direction: column; /* Stacks child elements vertically */
-    align-items: center; /* Centers child elements horizontally */
-    padding: 20px; /* Adds 20px inner padding */
+  grid-area: reviews-section; /* Assigns the grid area name */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks child elements vertically */
+  align-items: center; /* Centers child elements horizontally */
+  padding: 20px; /* Adds 20px inner padding */
 }
 
 /* Reviews Section Title */
 .section-title-reviews {
-    color: rgba(99, 9, 209, 0.611); /* Sets semi-transparent purple text color */
-    text-shadow: 12px 12px 10px rgb(11, 11, 11); /* Adds text shadow */
-    text-align: center; /* Centers the title text */
-    text-transform: uppercase; /* Converts letters to uppercase */
-    font-weight: bold; /* Makes text bold */
-    font-size: 30px; /* Sets font size to 30px */
-    margin-bottom: 15px; /* Adds 15px space below the title */
+  color: rgba(99, 9, 209, 0.611); /* Sets semi-transparent purple text color */
+  text-shadow: 12px 12px 10px rgb(11, 11, 11); /* Adds text shadow */
+  text-align: center; /* Centers the title text */
+  text-transform: uppercase; /* Converts letters to uppercase */
+  font-weight: bold; /* Makes text bold */
+  font-size: 30px; /* Sets font size to 30px */
+  margin-bottom: 15px; /* Adds 15px space below the title */
 }
 
 /* Hover effect on Reviews Title */
-.section-title-reviews:hover{
-    background: linear-gradient(to right, rgba(22, 9, 209, 0.585), rgba(209, 9, 126, 0.585), rgba(255, 4, 46, 0.994)); /* Multi-color linear gradient */
-    -webkit-background-clip: text; /* Clips background to text boundary */
-    color: transparent; /* Makes text transparent to reveal gradient */
+.section-title-reviews:hover {
+  background: linear-gradient(
+    to right,
+    rgba(22, 9, 209, 0.585),
+    rgba(209, 9, 126, 0.585),
+    rgba(255, 4, 46, 0.994)
+  ); /* Multi-color linear gradient */
+  -webkit-background-clip: text; /* Clips background to text boundary */
+  color: transparent; /* Makes text transparent to reveal gradient */
 }
 
 /* Review Card container */
 .review-card {
-    background-color: #1e293b; /* Sets background to slate gray */
-    border: 1px solid #334155; /* Adds a subtle 1px gray border */
-    padding: 15px 20px; /* Adds 15px vertical and 20px horizontal padding */
-    border-radius: 8px; /* Rounds container corners by 8px */
-    width: 80%; /* Takes up 80% width of its parent container */
-    max-width: 600px; /* Caps maximum width at 600px */
-    margin: 10px; /* Adds 10px space around each card */
+  background-color: #1e293b; /* Sets background to slate gray */
+  border: 1px solid #334155; /* Adds a subtle 1px gray border */
+  padding: 15px 20px; /* Adds 15px vertical and 20px horizontal padding */
+  border-radius: 8px; /* Rounds container corners by 8px */
+  width: 80%; /* Takes up 80% width of its parent container */
+  max-width: 600px; /* Caps maximum width at 600px */
+  margin: 10px; /* Adds 10px space around each card */
 }
 
 /* Review Author text */
 .review-author {
-    text-align: right; /* Aligns author name to the right */
-    color: #38bdf8; /* Sets text color to sky blue */
-    font-weight: bold; /* Makes author name bold */
-    margin-top: 8px; /* Adds 8px space above the author name */
+  text-align: right; /* Aligns author name to the right */
+  color: #38bdf8; /* Sets text color to sky blue */
+  font-weight: bold; /* Makes author name bold */
+  margin-top: 8px; /* Adds 8px space above the author name */
 }
 
 /* ==================== CART SECTION ==================== */
 .cart-section {
-    padding: 20px; /* Adds 20px padding */
-    display: flex; /* Enables Flexbox layout */
-    flex-direction: column; /* Arranges children vertically */
-    align-items: center; /* Centers content horizontally */
-    grid-area: cart-section; /* Sets grid area name */
+  padding: 20px; /* Adds 20px padding */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Arranges children vertically */
+  align-items: center; /* Centers content horizontally */
+  grid-area: cart-section; /* Sets grid area name */
 }
 
 /* Cart Form Container */
 .cart-form {
-    background-color: #1e293b; /* Sets background color to dark slate */
-    padding: 25px; /* Adds 25px inner padding */
-    border-radius: 10px; /* Rounds corners by 10px */
-    border: 1px solid #334155; /* Adds a 1px border */
-    width: 100%; /* Spans full width of parent container */
-    max-width: 500px; /* Limits maximum width to 500px */
-    display: flex; /* Enables Flexbox layout */
-    flex-direction: column; /* Stacks form elements vertically */
-    gap: 15px; /* Adds 15px spacing between form fields */
+  background-color: #1e293b; /* Sets background color to dark slate */
+  padding: 25px; /* Adds 25px inner padding */
+  border-radius: 10px; /* Rounds corners by 10px */
+  border: 1px solid #334155; /* Adds a 1px border */
+  width: 100%; /* Spans full width of parent container */
+  max-width: 500px; /* Limits maximum width to 500px */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks form elements vertically */
+  gap: 15px; /* Adds 15px spacing between form fields */
 }
 
 /* Form field wrapper (Label + Input) */
 .form-group {
-    display: flex; /* Enables Flexbox layout */
-    flex-direction: column; /* Stacks label and input vertically */
-    gap: 5px; /* Adds 5px gap between label and input */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks label and input vertically */
+  gap: 5px; /* Adds 5px gap between label and input */
 }
 
 /* Input text fields */
 .form-input {
-    padding: 10px; /* Inner padding of 10px */
-    border-radius: 6px; /* Rounded corners by 6px */
-    border: 1px solid #334155; /* 1px slate border */
-    background-color: #0f172a; /* Dark navy background color */
-    color: white; /* White text color */
+  padding: 10px; /* Inner padding of 10px */
+  border-radius: 6px; /* Rounded corners by 6px */
+  border: 1px solid #334155; /* 1px slate border */
+  background-color: #0f172a; /* Dark navy background color */
+  color: white; /* White text color */
 }
 
 /* Checkout Button */
 .checkout-btn {
-    background-color: #38bdf8; /* Sky blue background */
-    color: #0f172a; /* Dark navy text color */
-    font-weight: bold; /* Bold text style */
-    padding: 12px; /* Inner padding of 12px */
-    border: none; /* Removes default button border */
-    border-radius: 6px; /* Rounded corners of 6px */
-    cursor: pointer; /* Changes mouse cursor to pointer hand */
-    transition: background-color 0.3s; /* Smooth color transition over 0.3 seconds */
+  background-color: #38bdf8; /* Sky blue background */
+  color: #0f172a; /* Dark navy text color */
+  font-weight: bold; /* Bold text style */
+  padding: 12px; /* Inner padding of 12px */
+  border: none; /* Removes default button border */
+  border-radius: 6px; /* Rounded corners of 6px */
+  cursor: pointer; /* Changes mouse cursor to pointer hand */
+  transition: background-color 0.3s; /* Smooth color transition over 0.3 seconds */
 }
 
 /* Hover effect on Checkout Button */
 .checkout-btn:hover {
-    background-color: #0284c7; /* Darker blue background on hover */
-    color: white; /* Text color turns white on hover */
+  background-color: #0284c7; /* Darker blue background on hover */
+  color: white; /* Text color turns white on hover */
 }
 
 /* ==================== FOOTER SECTION ==================== */
-.site-footer{
-    grid-area: site-footer; /* Assigns area name in main layout grid */
-    display: grid; /* Enables CSS Grid layout */
-    grid-template-areas: 
-    'subscription-section footer-links last-updated-and-copyright' /* Arranges footer into 3 horizontal columns */
-    ;
-    justify-content: space-between; /* Spreads out columns to edge boundaries */
-    align-items: flex-start; /* Aligns content to top of footer grid */
-    background-color: #090d16; /* Near-black background color */
-    border-top: 1px solid #818cf8; /* Light purple border accent at top */
-    padding: 20px 40px; /* 20px vertical padding, 40px horizontal padding */
+.site-footer {
+  grid-area: site-footer; /* Assigns area name in main layout grid */
+  display: grid; /* Enables CSS Grid layout */
+  grid-template-areas: "subscription-section footer-links last-updated-and-copyright" /* Arranges footer into 3 horizontal columns */;
+  justify-content: space-between; /* Spreads out columns to edge boundaries */
+  align-items: flex-start; /* Aligns content to top of footer grid */
+  background-color: #090d16; /* Near-black background color */
+  border-top: 1px solid #818cf8; /* Light purple border accent at top */
+  padding: 20px 40px; /* 20px vertical padding, 40px horizontal padding */
 }
 
 /* Email input field in footer */
-.email-input{
-    padding: 10px; /* 10px inner padding */
-    border-radius: 6px; /* 6px rounded corners */
-    background-color: #0f172a; /* Dark background */
-    color: white; /* White text */
+.email-input {
+  padding: 10px; /* 10px inner padding */
+  border-radius: 6px; /* 6px rounded corners */
+  background-color: #0f172a; /* Dark background */
+  color: white; /* White text */
 }
 
 /* Subscribe Button */
-.subscribe-btn{
-    background-color: #38bdf8; /* Sky blue background */
-    color: #0f172a; /* Dark navy text */
-    font-weight: bold; /* Bold text */
-    padding: 12px; /* 12px padding */
-    border: none; /* Removes border */
-    border-radius: 6px; /* 6px rounded corners */
-    cursor: pointer; /* Pointer hand cursor */
-    transition: background-color 0.3s; /* Smooth transition timing for hover effect */
+.subscribe-btn {
+  background-color: #38bdf8; /* Sky blue background */
+  color: #0f172a; /* Dark navy text */
+  font-weight: bold; /* Bold text */
+  padding: 12px; /* 12px padding */
+  border: none; /* Removes border */
+  border-radius: 6px; /* 6px rounded corners */
+  cursor: pointer; /* Pointer hand cursor */
+  transition: background-color 0.3s; /* Smooth transition timing for hover effect */
 }
 
 /* Hover effect on Subscribe Button */
 .subscribe-btn:hover {
-    background-color: #0284c7; /* Darker blue background */
-    color: white; /* Text turns white */
-    transform: translateY(-2px); /* Lifts button upwards by 2px */
-    box-shadow: 10px 10px 6px black; /* Applies a black shadow underneath */
+  background-color: #0284c7; /* Darker blue background */
+  color: white; /* Text turns white */
+  transform: translateY(-2px); /* Lifts button upwards by 2px */
+  box-shadow: 10px 10px 6px black; /* Applies a black shadow underneath */
 }
 
 /* Newsletter Subscription Grid Area */
-.subscription-section{
-    grid-area: subscription-section; /* Places component in designated footer area */
+.subscription-section {
+  grid-area: subscription-section; /* Places component in designated footer area */
 }
 
 /* Footer Navigation Links Grid Area */
-.footer-links{
-    grid-area: footer-links; /* Places component in designated footer area */
+.footer-links {
+  grid-area: footer-links; /* Places component in designated footer area */
 }
 
 /* Individual Footer Link */
-.footer-link{
-    text-decoration: none; /* Removes default text underline */
+.footer-link {
+  text-decoration: none; /* Removes default text underline */
 }
 
 /* Hover effect on Footer Link */
-.footer-link:hover{
-    color: #334155; /* Changes text color to slate gray */
-    text-decoration: underline; /* Re-adds text underline on hover */
+.footer-link:hover {
+  color: #334155; /* Changes text color to slate gray */
+  text-decoration: underline; /* Re-adds text underline on hover */
 }
 
 /* Copyright & Last Updated Grid Area */
-.last-updated-and-copyright{
-    grid-area: last-updated-and-copyright; /* Places component in designated footer area */
+.last-updated-and-copyright {
+  grid-area: last-updated-and-copyright; /* Places component in designated footer area */
 }
 
 /* ==================== TABLET RESPONSIVENESS (max-width: 992px) ==================== */
 @media (max-width: 992px) {
-    .weapons-section {
-        grid-template-areas: 
-        'section-title section-title'
-        'thor-hammer stormbreaker'
-        'captain-america-shield infinity-gauntlet'
-        'cosmic-cube all-black-the-necrosword'
-        'eye-of-agamotto wolverine-claws'; /* Rearranges weapons items into 2 columns */
-    }
+  .weapons-section {
+    grid-template-areas:
+      "section-title section-title"
+      "thor-hammer stormbreaker"
+      "captain-america-shield infinity-gauntlet"
+      "cosmic-cube all-black-the-necrosword"
+      "eye-of-agamotto wolverine-claws"; /* Rearranges weapons items into 2 columns */
+  }
 
-    .products-section {
-        grid-template-areas: 
-        'clothes'
-        'spider-man-suit'
-        'iron-man-suit'
-        'captain-america-suit'; /* Stacks products into a single vertical column */
-    }
+  .products-section {
+    grid-template-areas:
+      "clothes"
+      "spider-man-suit"
+      "iron-man-suit"
+      "captain-america-suit"; /* Stacks products into a single vertical column */
+  }
 }
 
 /* ==================== MOBILE RESPONSIVENESS (max-width: 600px) ==================== */
 @media (max-width: 600px) {
-    .main-header{
-        position: static;
-    }
-    .header-top-row, .header-bottom-row {
-        flex-direction: column; /* Changes header layout from horizontal row to vertical column */
-        gap: 10px; /* Adds 10px vertical spacing between items */
-    }
+  .main-header {
+    position: static;
+  }
+  .header-top-row,
+  .header-bottom-row {
+    flex-direction: column; /* Changes header layout from horizontal row to vertical column */
+    gap: 10px; /* Adds 10px vertical spacing between items */
+  }
 
-    .welcome-container {
-        position: static; /* Removes relative/absolute positioning */
-        transform: none; /* Resets transform translations */
-    }
+  .welcome-container {
+    position: static; /* Removes relative/absolute positioning */
+    transform: none; /* Resets transform translations */
+  }
 
-    .weapons-section {
-        grid-template-areas: 
-        'section-title'
-        'thor-hammer'
-        'stormbreaker'
-        'captain-america-shield'
-        'infinity-gauntlet'
-        'cosmic-cube'
-        'all-black-the-necrosword'
-        'eye-of-agamotto'
-        'wolverine-claws'; /* Stacks all weapon cards sequentially in a 1-column layout */
-    }
+  .weapons-section {
+    grid-template-areas:
+      "section-title"
+      "thor-hammer"
+      "stormbreaker"
+      "captain-america-shield"
+      "infinity-gauntlet"
+      "cosmic-cube"
+      "all-black-the-necrosword"
+      "eye-of-agamotto"
+      "wolverine-claws"; /* Stacks all weapon cards sequentially in a 1-column layout */
+  }
 
-    .site-footer {
-        grid-template-areas: 
-        'subscription-section'
-        'footer-links'
-        'last-updated-and-copyright'; /* Stacks all footer sections into a single vertical column */
-        gap: 20px; /* Adds 20px vertical gap between stacked sections */
-    }
+  .site-footer {
+    grid-template-areas:
+      "subscription-section"
+      "footer-links"
+      "last-updated-and-copyright"; /* Stacks all footer sections into a single vertical column */
+    gap: 20px; /* Adds 20px vertical gap between stacked sections */
+  }
 }
 /* ==================== IPAD PORTRAIT RESPONSIVENESS (601px - 992px) ==================== */
 @media (min-width: 601px) and (max-width: 992px) {
-    /* Stack top header elements vertically to prevent logo and welcome text overlap */
-    .header-top-row {
-        /* Change flex direction from horizontal row to vertical column */
-        flex-direction: column;
-        /* Add 10px vertical space between the logo and the welcome message */
-        gap: 10px;
-    }
+  /* Stack top header elements vertically to prevent logo and welcome text overlap */
+  .header-top-row {
+    /* Change flex direction from horizontal row to vertical column */
+    flex-direction: column;
+    /* Add 10px vertical space between the logo and the welcome message */
+    gap: 10px;
+  }
 
-    /* Reset absolute positioning of the welcome text for iPad portrait orientation */
-    .welcome-container {
-        /* Return container to standard document flow instead of absolute positioning */
-        position: static;
-        /* Remove horizontal translation transform used for centering in wide screens */
-        transform: none;
-    }
+  /* Reset absolute positioning of the welcome text for iPad portrait orientation */
+  .welcome-container {
+    /* Return container to standard document flow instead of absolute positioning */
+    position: static;
+    /* Remove horizontal translation transform used for centering in wide screens */
+    transform: none;
+  }
 
-    /* Rearrange navigation bar and search bar vertically on iPad portrait view */
-    .header-bottom-row {
-        /* Change layout direction to stack navigation links and search bar */
-        flex-direction: column;
-        /* Add 15px vertical space between the navigation menu and search bar */
-        gap: 15px;
-    }
+  /* Rearrange navigation bar and search bar vertically on iPad portrait view */
+  .header-bottom-row {
+    /* Change layout direction to stack navigation links and search bar */
+    flex-direction: column;
+    /* Add 15px vertical space between the navigation menu and search bar */
+    gap: 15px;
+  }
 
-    /* Adjust navigation link layout and spacing to prevent text wrapping glitches */
-    .nav-list {
-        /* Center align navigation links horizontally */
-        justify-content: center;
-        /* Set 15px vertical gap between wrapped lines and 20px horizontal gap between links */
-        gap: 15px 20px;
-    }
+  /* Adjust navigation link layout and spacing to prevent text wrapping glitches */
+  .nav-list {
+    /* Center align navigation links horizontally */
+    justify-content: center;
+    /* Set 15px vertical gap between wrapped lines and 20px horizontal gap between links */
+    gap: 15px 20px;
+  }
 
-    /* Prevent individual navigation text items from breaking into multiple lines */
-    .nav-item {
-        /* Force link text like 'Shopping-Cart' to stay on a single line */
-        white-space: nowrap;
-    }
+  /* Prevent individual navigation text items from breaking into multiple lines */
+  .nav-item {
+    /* Force link text like 'Shopping-Cart' to stay on a single line */
+    white-space: nowrap;
+  }
 }
